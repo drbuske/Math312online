@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
+        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
-        "textmacros",
         "knowl"
       ]
     }
@@ -73,10 +73,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
+      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
-      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -119,16 +119,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.2';
+eBookConfig.runestone_version = '8.2.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d0616b3d72ab3b06.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.af9055d29ed602c4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -240,7 +240,7 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Detailed Syllabus</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="title">Course Information</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="syllabus-3.html" class="internal"><span class="title">Topics and Learning Outcomes</span></a></div></li>
@@ -461,18 +461,15 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="handout" id="ch-practice-exams-8" data-margins="0.75in 0.75in 0.75in 0.75in">
-<h2 class="heading hide-type">
+<section class="handout" id="ch-practice-exams-8" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
 <span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Final Practice Exam</span><div class="print-links"><a href="?printpreview=ch-practice-exams-8" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<section class="section" id="ch-practice-exams-8-2">
-<h3 class="heading hide-type">
+<section class="section" id="ch-practice-exams-8-2"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title"></span>
 </h3>
 <div class="para" id="ch-practice-exams-8-2-1">Be sure to try each question before looking at the solutions.<div class="autopermalink" data-description="Paragraph"><a href="#ch-practice-exams-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<section class="exercises" id="exercises-practicefinalexam">
-<h4 class="heading hide-type">
+<section class="exercises" id="exercises-practicefinalexam"><h4 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Questions</span>
 </h4>
 <article class="exercise exercise-like" id="exercises-practicefinalexam-2"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
@@ -496,9 +493,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Item 1.b"><a href="#exercises-practicefinalexam-2-1-3-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
 </li>
 </ol>
-<div class="solutions">
-<details id="exercises-practicefinalexam-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha lower-alpha-level-1" id="exercises-practicefinalexam-2-2-1">
 <li id="exercises-practicefinalexam-2-2-1-1">
 <div class="para logical" id="exercises-practicefinalexam-2-2-1-1-1">
@@ -558,11 +553,8 @@ x_3
 </li>
 </ol>
 <div class="autopermalink" data-description="Solution 1.1"><a href="#exercises-practicefinalexam-2-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 1"><a href="#exercises-practicefinalexam-2" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-3"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 1"><a href="#exercises-practicefinalexam-2" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-3"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-3-1-1">Determine weights to make a true statement below, or explain why this cannot be done.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="exercises-practicefinalexam-3-1-2">
@@ -576,9 +568,7 @@ x_3
 \begin{bmatrix}10\\21\\8\end{bmatrix}
 \end{equation*}
 </div>
-<div class="solutions">
-<details id="exercises-practicefinalexam-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercises-practicefinalexam-3-2-1">Form an augmented matrix and row reduce:<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="exercises-practicefinalexam-3-2-2">
@@ -610,11 +600,8 @@ x_3
 <div class="para" id="exercises-practicefinalexam-3-2-5">by choosing the free variable <span class="process-math">\(x_3 = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-3-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 2.1"><a href="#exercises-practicefinalexam-3-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 2"><a href="#exercises-practicefinalexam-3" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-4"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 2"><a href="#exercises-practicefinalexam-3" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-4"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-4-1-1">Suppose that<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="exercises-practicefinalexam-4-1-2">
@@ -655,9 +642,7 @@ A =
 <div class="autopermalink" data-description="Item 3.e"><a href="#exercises-practicefinalexam-4-1-3-5" title="Copy heading and permalink for Item 3.e" aria-label="Copy heading and permalink for Item 3.e">🔗</a></div>
 </li>
 </ol>
-<div class="solutions">
-<details id="exercises-practicefinalexam-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-4-2-1">
 <li id="exercises-practicefinalexam-4-2-1-1">
 <div class="para logical" id="exercises-practicefinalexam-4-2-1-1-1">
@@ -738,11 +723,8 @@ A^T \sim
 </li>
 </ol>
 <div class="autopermalink" data-description="Solution 3.1"><a href="#exercises-practicefinalexam-4-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 3"><a href="#exercises-practicefinalexam-4" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-5"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3"><a href="#exercises-practicefinalexam-4" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-5"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-5-1-1">Let<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="exercises-practicefinalexam-5-1-2">
@@ -760,9 +742,7 @@ H =
 </div>
 <div class="para" id="exercises-practicefinalexam-5-1-3">Explain why <span class="process-math">\(H\)</span> is a subspace of <span class="process-math">\(\mathbb{R}^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions">
-<details id="exercises-practicefinalexam-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="displaymath process-math" id="exercises-practicefinalexam-5-2-1">
 \begin{equation*}
 H = span \left\{
@@ -775,16 +755,11 @@ H = span \left\{
 <div class="para" id="exercises-practicefinalexam-5-2-2">so it is a subspace.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 4.1"><a href="#exercises-practicefinalexam-5-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 4"><a href="#exercises-practicefinalexam-5" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-6"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 4"><a href="#exercises-practicefinalexam-5" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-6"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-6-1-1">Define a specific linear transformation <span class="process-math">\(T\)</span> and use a determinant to find the area of the parallelogram with vertices <span class="process-math">\((0,0)\text{,}\)</span> <span class="process-math">\((4,1)\text{,}\)</span> <span class="process-math">\((2,4)\text{,}\)</span> and <span class="process-math">\((-2,3)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/prefigure/parallelogram-image-finalexam-review.svg" role="img" class="contained"></div>
-<div class="solutions">
-<details id="exercises-practicefinalexam-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercises-practicefinalexam-6-2-1">Define a linear transformation <span class="process-math">\(T\)</span> so that<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="exercises-practicefinalexam-6-2-2">
@@ -812,15 +787,11 @@ T(\mathbf{x}) = A\mathbf{x} =
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Solution 5.1"><a href="#exercises-practicefinalexam-6-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 5"><a href="#exercises-practicefinalexam-6" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-7"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 5"><a href="#exercises-practicefinalexam-6" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-7"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-7-1-1">Let <span class="process-math">\(\mathcal{B} = \left\{ \mathbf{v_1} = \begin{bmatrix} 1 \\ 2 \end{bmatrix},\,
 \mathbf{v_2} = \begin{bmatrix} 1 \\ -2 \end{bmatrix} \right\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/prefigure/parallelogram-image-finalexam-review-2.svg" role="img" class="contained"></div> 
-<ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-7-1-3">
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/prefigure/parallelogram-image-finalexam-review-2.svg" role="img" class="contained"></div> <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-7-1-3">
 <li id="exercises-practicefinalexam-7-1-3-1">
 <div class="para" id="exercises-practicefinalexam-7-1-3-1-1">Is <span class="process-math">\(\mathcal{B}\)</span> a basis of <span class="process-math">\(\mathbb{R}^2\text{?}\)</span> Defend your answer.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-7-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -847,9 +818,7 @@ T(\mathbf{x}) = A\mathbf{x} =
 <div class="autopermalink" data-description="Item 6.e"><a href="#exercises-practicefinalexam-7-1-3-5" title="Copy heading and permalink for Item 6.e" aria-label="Copy heading and permalink for Item 6.e">🔗</a></div>
 </li>
 </ol>
-<div class="solutions">
-<details id="exercises-practicefinalexam-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha lower-alpha-level-1" id="exercises-practicefinalexam-7-2-1">
 <li id="exercises-practicefinalexam-7-2-1-1">
 <div class="para" id="exercises-practicefinalexam-7-2-1-1-1">Yes, the vectors are linearly independent and span <span class="process-math">\(\mathbb{R}^2\text{.}\)</span> If they were the columns in a matrix <span class="process-math">\(A\text{,}\)</span> the matrix in the RREF would be the <span class="process-math">\(2 \times 2\)</span> identity matrix with a pivot in each row and in each column.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-7-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -889,14 +858,10 @@ T(\mathbf{x}) = A\mathbf{x} =
 </li>
 </ol>
 <div class="autopermalink" data-description="Solution 6.1"><a href="#exercises-practicefinalexam-7-2" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 6"><a href="#exercises-practicefinalexam-7" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-8"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 6"><a href="#exercises-practicefinalexam-7" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-8"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-8-1-1">The elementary matrices <span class="process-math">\(E_1 = \begin{bmatrix} 1 \amp 0 \amp 0 \\ -2 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \end{bmatrix}\)</span> and <span class="process-math">\(E_2 = \begin{bmatrix} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0 \amp -\tfrac{4}{3} \amp 1 \end{bmatrix}\)</span> transform the matrix <span class="process-math">\(A = \begin{bmatrix} 2 \amp 4 \amp 6 \\ 4 \amp 5 \amp 6 \\ 0 \amp -4 \amp -8 \end{bmatrix}\)</span> to <span class="process-math">\(U = \begin{bmatrix} 2 \amp 4 \amp 6 \\ 0 \amp -3 \amp -6 \\ 0 \amp 0 \amp 0 \end{bmatrix}\text{.}\)</span> That is, <span class="process-math">\(E_2 E_1 A = U\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha lower-alpha-level-1" id="exercises-practicefinalexam-8-1-2">
+</div> <ol class="lower-alpha lower-alpha-level-1" id="exercises-practicefinalexam-8-1-2">
 <li id="exercises-practicefinalexam-8-1-2-1">
 <div class="para" id="exercises-practicefinalexam-8-1-2-1-1">Find the LU-factorization of <span class="process-math">\(A\text{.}\)</span>  That is, determine a lower triangular matrix <span class="process-math">\(L\)</span> so that <span class="process-math">\(A=LU\)</span> with <span class="process-math">\(A\)</span> and <span class="process-math">\(U\)</span> as given above.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-8-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -913,9 +878,7 @@ T(\mathbf{x}) = A\mathbf{x} =
 <div class="autopermalink" data-description="Item 7.c"><a href="#exercises-practicefinalexam-8-1-2-3" title="Copy heading and permalink for Item 7.c" aria-label="Copy heading and permalink for Item 7.c">🔗</a></div>
 </li>
 </ol>
-<div class="solutions">
-<details id="exercises-practicefinalexam-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-8-2-1">
 <li id="exercises-practicefinalexam-8-2-1-1">
 <div class="para" id="exercises-practicefinalexam-8-2-1-1-1">
@@ -962,16 +925,11 @@ T(\mathbf{x}) = A\mathbf{x} =
 </li>
 </ol>
 <div class="autopermalink" data-description="Solution 7.1"><a href="#exercises-practicefinalexam-8-2" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 7"><a href="#exercises-practicefinalexam-8" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-9"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 7"><a href="#exercises-practicefinalexam-8" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-9"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-9-1-1">A <span class="process-math">\(2 \times 2\)</span> matrix <span class="process-math">\(A\)</span> has eigenvalues <span class="process-math">\(\lambda_1=-2\)</span> with eigenvector <span class="process-math">\(\mathbf{v}_1=\begin{bmatrix}3\\2\end{bmatrix}\)</span> and <span class="process-math">\(\lambda_2=3\)</span> with eigenvector <span class="process-math">\(\mathbf{v}_2=\begin{bmatrix}1\\1\end{bmatrix}\text{.}\)</span> Find <span class="process-math">\(A^4 \begin{bmatrix}5\\-1\end{bmatrix}\text{.}\)</span>  Hint: Do not try to find <span class="process-math">\(A\text{.}\)</span>  The point is to do this without actually computing <span class="process-math">\(A^4\text{.}\)</span>  Instead, write <span class="process-math">\(\begin{bmatrix}5\\-1\end{bmatrix}\)</span> as a linear combination of <span class="process-math">\(\mathbf{v}_1\)</span> and <span class="process-math">\(\mathbf{v}_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions">
-<details id="exercises-practicefinalexam-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="exercises-practicefinalexam-9-2-1">
 <div class="para">To write <span class="process-math">\(\begin{bmatrix} 5 \\ -1 \end{bmatrix}\)</span> as a linear combination of <span class="process-math">\(\mathbf{v}_1\)</span> and <span class="process-math">\(\mathbf{v}_2\text{,}\)</span> we use an augmented matrix:</div>
 <div class="displaymath process-math" id="exercises-practicefinalexam-9-2-1-4">
@@ -1004,16 +962,11 @@ A^4 \begin{bmatrix} 5 \\ -1 \end{bmatrix}
 <div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-9-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 8.1"><a href="#exercises-practicefinalexam-9-2" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 8"><a href="#exercises-practicefinalexam-9" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-10"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 8"><a href="#exercises-practicefinalexam-9" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-10"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-10-1-1">Let <span class="process-math">\(A=\begin{bmatrix}2 \amp -2 \\ -2 \amp 5\end{bmatrix}\text{.}\)</span> Find the eigenvalues of <span class="process-math">\(A\)</span> and find a basis for each eigenspace. Then, identify a diagonal matrix <span class="process-math">\(D\)</span> and an orthogonal matrix <span class="process-math">\(P\)</span> such that <span class="process-math">\(A=PDP^{-1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions">
-<details id="exercises-practicefinalexam-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercises-practicefinalexam-10-2-1">
 <span class="process-math">\(\det(A-\lambda I)=\lambda^2-7\lambda+6=(\lambda-6)(\lambda-1)\)</span> so that the eigenvalues of <span class="process-math">\(A\)</span> are <span class="process-math">\(\lambda_1=6\)</span> and <span class="process-math">\(\lambda_2=1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1022,14 +975,10 @@ A^4 \begin{bmatrix} 5 \\ -1 \end{bmatrix}
 <div class="para" id="exercises-practicefinalexam-10-2-3">So we can diagonalize <span class="process-math">\(A\)</span> using <span class="process-math">\(D=\begin{bmatrix}6 \amp 0 \\ 0 \amp 1\end{bmatrix}\text{,}\)</span> and <span class="process-math">\(P=\begin{bmatrix}1 \amp 2 \\ -2 \amp 1\end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-10-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 9.1"><a href="#exercises-practicefinalexam-10-2" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 9"><a href="#exercises-practicefinalexam-10" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-11"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 9"><a href="#exercises-practicefinalexam-10" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-11"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-11-1-1">Consider the matrix <span class="process-math">\(A=\begin{bmatrix}6 \amp 8 \\ -1 \amp 2\end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha lower-alpha-level-1" id="exercises-practicefinalexam-11-1-2">
+</div> <ol class="lower-alpha lower-alpha-level-1" id="exercises-practicefinalexam-11-1-2">
 <li id="exercises-practicefinalexam-11-1-2-1">
 <div class="para" id="exercises-practicefinalexam-11-1-2-1-1">Find the characteristic polynomial of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-11-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1051,9 +1000,7 @@ A^4 \begin{bmatrix} 5 \\ -1 \end{bmatrix}
 <div class="autopermalink" data-description="Item 10.d"><a href="#exercises-practicefinalexam-11-1-2-4" title="Copy heading and permalink for Item 10.d" aria-label="Copy heading and permalink for Item 10.d">🔗</a></div>
 </li>
 </ol>
-<div class="solutions">
-<details id="exercises-practicefinalexam-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-11-2-1">
 <li id="exercises-practicefinalexam-11-2-1-1">
 <div class="para" id="exercises-practicefinalexam-11-2-1-1-1">
@@ -1095,14 +1042,10 @@ A^4 \begin{bmatrix} 5 \\ -1 \end{bmatrix}
 </li>
 </ol>
 <div class="autopermalink" data-description="Solution 10.1"><a href="#exercises-practicefinalexam-11-2" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 10"><a href="#exercises-practicefinalexam-11" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-12"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 10"><a href="#exercises-practicefinalexam-11" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-12"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-12-1-1">For the following, decide if the statement is True or False. If it is false, give a counterexample. If it is true, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-12-1-2">
+</div> <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-12-1-2">
 <li id="exercises-practicefinalexam-12-1-2-1">
 <div class="para" id="exercises-practicefinalexam-12-1-2-1-1">The sum of two eigenvectors of a matrix <span class="process-math">\(A\)</span> is always an eigenvector of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-12-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1114,9 +1057,7 @@ A^4 \begin{bmatrix} 5 \\ -1 \end{bmatrix}
 <div class="autopermalink" data-description="Item 11.b"><a href="#exercises-practicefinalexam-12-1-2-2" title="Copy heading and permalink for Item 11.b" aria-label="Copy heading and permalink for Item 11.b">🔗</a></div>
 </li>
 </ol>
-<div class="solutions">
-<details id="exercises-practicefinalexam-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-12-2-1">
 <li id="exercises-practicefinalexam-12-2-1-1">
 <div class="para" id="exercises-practicefinalexam-12-2-1-1-1">False. Counterexample: <span class="process-math">\(A = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 2 \end{bmatrix}\text{.}\)</span> Eigenvector for eigenvalue 1: <span class="process-math">\(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\text{.}\)</span> Eigenvector for eigenvalue 2: <span class="process-math">\(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\text{.}\)</span> Their sum is <span class="process-math">\(\begin{bmatrix} 1 \\ 1 \end{bmatrix}\text{.}\)</span> Check: <span class="process-math">\(A \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}\text{,}\)</span> which is not a scalar multiple of <span class="process-math">\(\begin{bmatrix} 1 \\ 1 \end{bmatrix}\text{.}\)</span> So the sum is not necessarily an eigenvector.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-12-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1130,11 +1071,8 @@ A^4 \begin{bmatrix} 5 \\ -1 \end{bmatrix}
 </li>
 </ol>
 <div class="autopermalink" data-description="Solution 11.1"><a href="#exercises-practicefinalexam-12-2" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 11"><a href="#exercises-practicefinalexam-12" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-13"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 11"><a href="#exercises-practicefinalexam-12" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-13"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exercises-practicefinalexam-13-1-1">
 <div class="para">Consider the following subset of the vector space of all real-valued functions</div>
 <div class="displaymath process-math" id="exercises-practicefinalexam-13-1-1-1">
@@ -1146,33 +1084,22 @@ S = \{\cos^2 t,\sin^2 t,\cos(2t),\sin(2t),1\}.
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions">
-<details id="exercises-practicefinalexam-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercises-practicefinalexam-13-2-1">Since <span class="process-math">\(\cos^2(t) = \frac{1 + \cos(2t)}{2}\)</span> and <span class="process-math">\(\sin^2(t) = \frac{1 - \cos(2t)}{2}\text{,}\)</span> these two functions are linear combinations are <span class="process-math">\(1\)</span> and <span class="process-math">\(\cos(2t)\text{.}\)</span> So <span class="process-math">\(W = \text{span}\{\cos(2t),\sin(2t),1\}\text{.}\)</span> These functions are all linearly independent so that <span class="process-math">\(\dim W = 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 12.1"><a href="#exercises-practicefinalexam-13-2" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 12"><a href="#exercises-practicefinalexam-13" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-14"><h5 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 12"><a href="#exercises-practicefinalexam-13" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-14"><h5 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-14-1-1">Is the function <span class="process-math">\(f(x) = x+5\)</span> in the subspace spanned by <span class="process-math">\(g(x) = x+1\)</span> and <span class="process-math">\(h(x) = x+3\text{?}\)</span> Explain.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions">
-<details id="exercises-practicefinalexam-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercises-practicefinalexam-14-2-1">Yes. In fact, <span class="process-math">\(f(x) = -1g(x) + 2h(x)\text{.}\)</span> This is essentially the same as asking if the vector <span class="process-math">\(\begin{bmatrix} 5 \\ 1 \end{bmatrix}\)</span> is in the subspace spanned by <span class="process-math">\(\left\{\begin{bmatrix} 1 \\ 1 \end{bmatrix}, \begin{bmatrix} 3 \\ 1 \end{bmatrix}\right\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 13.1"><a href="#exercises-practicefinalexam-14-2" title="Copy heading and permalink for Solution 13.1" aria-label="Copy heading and permalink for Solution 13.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 13"><a href="#exercises-practicefinalexam-14" title="Copy heading and permalink for Exercise 13" aria-label="Copy heading and permalink for Exercise 13">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-15"><h5 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 13"><a href="#exercises-practicefinalexam-14" title="Copy heading and permalink for Exercise 13" aria-label="Copy heading and permalink for Exercise 13">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-15"><h5 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercises-practicefinalexam-15-1-1">In the following, decide if the set <span class="process-math">\(S\)</span> is a basis, an orthogonal basis, an orthonormal basis, or not a basis for <span class="process-math">\(\mathbb{R}^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-15-1-2">
+</div> <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-15-1-2">
 <li id="exercises-practicefinalexam-15-1-2-1">
 <div class="para" id="exercises-practicefinalexam-15-1-2-1-1">
 <span class="process-math">\(\displaystyle S = \left\{\begin{bmatrix} 1/3 \\ 1/3 \\ 1/3 \end{bmatrix}, \begin{bmatrix} -1/2 \\ 0 \\ 1/2 \end{bmatrix}, \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}\right\}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-15-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1192,9 +1119,7 @@ S = \{\cos^2 t,\sin^2 t,\cos(2t),\sin(2t),1\}.
 <div class="autopermalink" data-description="Item 14.c"><a href="#exercises-practicefinalexam-15-1-2-3" title="Copy heading and permalink for Item 14.c" aria-label="Copy heading and permalink for Item 14.c">🔗</a></div>
 </li>
 </ol>
-<div class="solutions">
-<details id="exercises-practicefinalexam-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-15-2-1">
 <li id="exercises-practicefinalexam-15-2-1-1">
 <div class="para" id="exercises-practicefinalexam-15-2-1-1-1">Basis<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-15-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1213,11 +1138,8 @@ S = \{\cos^2 t,\sin^2 t,\cos(2t),\sin(2t),1\}.
 </li>
 </ol>
 <div class="autopermalink" data-description="Solution 14.1"><a href="#exercises-practicefinalexam-15-2" title="Copy heading and permalink for Solution 14.1" aria-label="Copy heading and permalink for Solution 14.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 14"><a href="#exercises-practicefinalexam-15" title="Copy heading and permalink for Exercise 14" aria-label="Copy heading and permalink for Exercise 14">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-16"><h5 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 14"><a href="#exercises-practicefinalexam-15" title="Copy heading and permalink for Exercise 14" aria-label="Copy heading and permalink for Exercise 14">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-16"><h5 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exercises-practicefinalexam-16-1-1">
 <div class="para">Suppose a subspace <span class="process-math">\(W\)</span> of <span class="process-math">\(\mathbb{R}^3\)</span> is formed by</div>
 <div class="displaymath process-math" id="exercises-practicefinalexam-16-1-1-3">
@@ -1227,8 +1149,7 @@ S = \{\cos^2 t,\sin^2 t,\cos(2t),\sin(2t),1\}.
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-16-1-2">
+</div> <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-16-1-2">
 <li id="exercises-practicefinalexam-16-1-2-1">
 <div class="para" id="exercises-practicefinalexam-16-1-2-1-1">Find an orthogonal basis for <span class="process-math">\(W\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-16-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1250,9 +1171,7 @@ S = \{\cos^2 t,\sin^2 t,\cos(2t),\sin(2t),1\}.
 <div class="autopermalink" data-description="Item 15.d"><a href="#exercises-practicefinalexam-16-1-2-4" title="Copy heading and permalink for Item 15.d" aria-label="Copy heading and permalink for Item 15.d">🔗</a></div>
 </li>
 </ol>
-<div class="solutions">
-<details id="exercises-practicefinalexam-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exercises-practicefinalexam-16-2-1">
 <li id="exercises-practicefinalexam-16-2-1-1">
 <div class="para" id="exercises-practicefinalexam-16-2-1-1-1">Let <span class="process-math">\(\mathbf{w}_1 = \mathbf{u}_1\text{.}\)</span> Let <span class="process-math">\(\mathbf{w}_2 = \mathbf{u}_2 - \hat{\mathbf{u}}_2\)</span> where <span class="process-math">\(\hat{\mathbf{u}}_2 = \frac{\mathbf{u}_2 \cdot \mathbf{u}_1}{\mathbf{u}_1 \cdot \mathbf{u}_1} \mathbf{u}_1 = \tfrac{1}{6} \mathbf{u}_1\text{.}\)</span> So an orthogonal basis for <span class="process-math">\(W\)</span> is <span class="process-math">\(\{\mathbf{w}_1,\mathbf{w}_2\}\)</span> where <span class="process-math">\(\mathbf{w}_1 = \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix}\text{,}\)</span> <span class="process-math">\(\mathbf{w}_2 = \begin{bmatrix} 1 \\ -1 \\ 0 \end{bmatrix} - \begin{bmatrix} -2/6 \\ 1/6 \\ 1/6 \end{bmatrix}
@@ -1317,11 +1236,8 @@ P \mathstrut \amp =
 </li>
 </ol>
 <div class="autopermalink" data-description="Solution 15.1"><a href="#exercises-practicefinalexam-16-2" title="Copy heading and permalink for Solution 15.1" aria-label="Copy heading and permalink for Solution 15.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 15"><a href="#exercises-practicefinalexam-16" title="Copy heading and permalink for Exercise 15" aria-label="Copy heading and permalink for Exercise 15">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-17"><h5 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 15"><a href="#exercises-practicefinalexam-16" title="Copy heading and permalink for Exercise 15" aria-label="Copy heading and permalink for Exercise 15">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-17"><h5 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exercises-practicefinalexam-17-1-1">
 <div class="para">Apply the Gram-Schmidt orthogonalization process to the following basis for a 3-dimensional subspace <span class="process-math">\(W\)</span> of <span class="process-math">\(\mathbb{R}^4\text{:}\)</span>
 </div>
@@ -1336,9 +1252,7 @@ P \mathstrut \amp =
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions">
-<details id="exercises-practicefinalexam-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercises-practicefinalexam-17-2-1">Start by setting <span class="process-math">\(\mathbf{u}_1 = \mathbf{v}_1\text{.}\)</span> Then, define<div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-17-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="exercises-practicefinalexam-17-2-2">
@@ -1390,11 +1304,8 @@ P \mathstrut \amp =
 <div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-17-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 16.1"><a href="#exercises-practicefinalexam-17-2" title="Copy heading and permalink for Solution 16.1" aria-label="Copy heading and permalink for Solution 16.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 16"><a href="#exercises-practicefinalexam-17" title="Copy heading and permalink for Exercise 16" aria-label="Copy heading and permalink for Exercise 16">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercises-practicefinalexam-18"><h5 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 16"><a href="#exercises-practicefinalexam-17" title="Copy heading and permalink for Exercise 16" aria-label="Copy heading and permalink for Exercise 16">🔗</a></div></article><article class="exercise exercise-like" id="exercises-practicefinalexam-18"><h5 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exercises-practicefinalexam-18-1-1">
 <div class="para">Show that the linear system <span class="process-math">\(\begin{bmatrix} 2 \amp -1 \\ -1 \amp 1 \\ 3 \amp -2 \end{bmatrix}
 \begin{bmatrix} x \\ y \end{bmatrix}
@@ -1413,9 +1324,7 @@ P \mathstrut \amp =
 <div class="para">is minimized?</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-18-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions">
-<details id="exercises-practicefinalexam-18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+<div class="solutions"><details id="exercises-practicefinalexam-18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="exercises-practicefinalexam-18-2-1">
 <div class="para">If <span class="process-math">\(A = \begin{bmatrix} 2 \amp -1 \\ -1 \amp 1 \\ 3 \amp -2 \end{bmatrix}\)</span> and <span class="process-math">\(\mathbf{b} = \begin{bmatrix} 5 \\ 7 \\ -1 \end{bmatrix}\text{,}\)</span> the answer can be expressed as</div>
 <div class="displaymath process-math" id="exercises-practicefinalexam-18-2-1-3">
@@ -1426,13 +1335,8 @@ P \mathstrut \amp =
 <div class="autopermalink" data-description="Paragraph"><a href="#exercises-practicefinalexam-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 17.1"><a href="#exercises-practicefinalexam-18-2" title="Copy heading and permalink for Solution 17.1" aria-label="Copy heading and permalink for Solution 17.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Exercise 17"><a href="#exercises-practicefinalexam-18" title="Copy heading and permalink for Exercise 17" aria-label="Copy heading and permalink for Exercise 17">🔗</a></div>
-</article><div class="autopermalink" data-description="Exercises: Questions"><a href="#exercises-practicefinalexam" title="Copy heading and permalink for Exercises: Questions" aria-label="Copy heading and permalink for Exercises: Questions">🔗</a></div>
-</section><div class="autopermalink" data-description="Section"><a href="#ch-practice-exams-8-2" title="Copy heading and permalink for Section" aria-label="Copy heading and permalink for Section">🔗</a></div>
-</section><div class="autopermalink" data-description="Handout: Final Practice Exam"><a href="#ch-practice-exams-8" title="Copy heading and permalink for Handout: Final Practice Exam" aria-label="Copy heading and permalink for Handout: Final Practice Exam">🔗</a></div>
-</section>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 17"><a href="#exercises-practicefinalexam-18" title="Copy heading and permalink for Exercise 17" aria-label="Copy heading and permalink for Exercise 17">🔗</a></div></article><div class="autopermalink" data-description="Exercises: Questions"><a href="#exercises-practicefinalexam" title="Copy heading and permalink for Exercises: Questions" aria-label="Copy heading and permalink for Exercises: Questions">🔗</a></div></section><div class="autopermalink" data-description="Section"><a href="#ch-practice-exams-8-2" title="Copy heading and permalink for Section" aria-label="Copy heading and permalink for Section">🔗</a></div></section><div class="autopermalink" data-description="Handout: Final Practice Exam"><a href="#ch-practice-exams-8" title="Copy heading and permalink for Handout: Final Practice Exam" aria-label="Copy heading and permalink for Handout: Final Practice Exam">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-practice-exams-7.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>

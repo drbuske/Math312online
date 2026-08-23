@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
+        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
-        "textmacros",
         "knowl"
       ]
     }
@@ -73,10 +73,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
+      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
-      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -119,16 +119,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.2';
+eBookConfig.runestone_version = '8.2.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d0616b3d72ab3b06.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.af9055d29ed602c4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -240,7 +240,7 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
-<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Detailed Syllabus</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="title">Course Information</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="syllabus-3.html" class="internal"><span class="title">Topics and Learning Outcomes</span></a></div></li>
@@ -433,57 +433,42 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content">
-<section class="section" id="sec-course-info">
-<h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-course-info"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Information</span>
 </h2>
 <div class="para logical" id="sec-course-info-2">
-<div class="para">This is the syllabus for <dfn class="terminology">Linear Algebra (MATH 312)</dfn> for Summer 2026. It is a 4-credit course offered through St. Cloud State University. </div>
+<div class="para">This is a more detailed syllabus for the accelerated, online version of <dfn class="terminology">Linear Algebra (MATH 312)</dfn>, a 4-credit course offered through St. Cloud State University. </div>
 <dl class="description-list">
 <dt id="sec-course-info-2-2-1">Instructor<div class="autopermalink" data-description="Item: Instructor"><a href="#sec-course-info-2-2-1" title="Copy heading and permalink for Item: Instructor" aria-label="Copy heading and permalink for Item: Instructor">🔗</a></div>
 </dt>
-<dd>
-<div class="para" id="sec-course-info-2-2-1-2">Dr. Dale Buske, CH 367A, <a class="external" href="mailto:drbuske@stcloudstate.edu" target="_blank"><code class="code-inline tex2jax_ignore">drbuske@stcloudstate.edu</code></a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</dd>
+<dd><div class="para" id="sec-course-info-2-2-1-2">Dr. Dale Buske, CH 367A, <a class="external" href="mailto:drbuske@stcloudstate.edu" target="_blank"><code class="code-inline tex2jax_ignore">drbuske@stcloudstate.edu</code></a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
 <dt id="sec-course-info-2-2-2">Student Hours<div class="autopermalink" data-description="Item: Student Hours"><a href="#sec-course-info-2-2-2" title="Copy heading and permalink for Item: Student Hours" aria-label="Copy heading and permalink for Item: Student Hours">🔗</a></div>
 </dt>
-<dd>
-<div class="para" id="sec-course-info-2-2-2-2">Available via Zoom by appointment.  Meetings on campus are also possible.  Email to set up a day, time, and method to meet.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</dd>
+<dd><div class="para" id="sec-course-info-2-2-2-2">Available via Zoom by appointment.  Meetings on campus are also possible.  Email to set up a day, time, and method to meet.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
 <dt id="sec-course-info-2-2-3">Accessibility Services<div class="autopermalink" data-description="Item: Accessibility Services"><a href="#sec-course-info-2-2-3" title="Copy heading and permalink for Item: Accessibility Services" aria-label="Copy heading and permalink for Item: Accessibility Services">🔗</a></div>
 </dt>
-<dd>
-<div class="para" id="sec-course-info-2-2-3-2">Please contact Student Accessibility Services (SAS), <a class="external" href="mailto:sas@stcloudstate.edu" target="_blank"><code class="code-inline tex2jax_ignore">sas@stcloudstate.edu</code></a> or 320-308-4080, Centennial Hall 202, to meet and discuss reasonable and appropriate accommodations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</dd>
+<dd><div class="para" id="sec-course-info-2-2-3-2">Please contact Student Accessibility Services (SAS), <a class="external" href="mailto:sas@stcloudstate.edu" target="_blank"><code class="code-inline tex2jax_ignore">sas@stcloudstate.edu</code></a> or 320-308-4080, Centennial Hall 202, to meet and discuss reasonable and appropriate accommodations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
 <dt id="sec-course-info-2-2-4">Class Meetings<div class="autopermalink" data-description="Item: Class Meetings"><a href="#sec-course-info-2-2-4" title="Copy heading and permalink for Item: Class Meetings" aria-label="Copy heading and permalink for Item: Class Meetings">🔗</a></div>
 </dt>
-<dd>
-<div class="para" id="sec-course-info-2-2-4-2">The course is asynchronous; however, closely following the suggested schedule is strongly advised in order to be successful and prepared for assessments of your learning.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</dd>
+<dd><div class="para" id="sec-course-info-2-2-4-2">The course is asynchronous. Following the online schedule is critical your success.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
 <dt id="sec-course-info-2-2-5">Course Description<div class="autopermalink" data-description="Item: Course Description"><a href="#sec-course-info-2-2-5" title="Copy heading and permalink for Item: Course Description" aria-label="Copy heading and permalink for Item: Course Description">🔗</a></div>
 </dt>
-<dd>
-<div class="para" id="sec-course-info-2-2-5-2">Matrices, matrix operations, systems of linear equations, determinants, geometry of R-n, vector spaces, subspaces, linear transformations, inner products, eigenvalues.  4 cr<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</dd>
+<dd><div class="para" id="sec-course-info-2-2-5-2">Matrices, matrix operations, systems of linear equations, determinants, geometry of R-n, vector spaces, subspaces, linear transformations, inner products, eigenvalues.  4 cr<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
 <dt id="sec-course-info-2-2-6">Prerequisite<div class="autopermalink" data-description="Item: Prerequisite"><a href="#sec-course-info-2-2-6" title="Copy heading and permalink for Item: Prerequisite" aria-label="Copy heading and permalink for Item: Prerequisite">🔗</a></div>
 </dt>
-<dd>
-<div class="para" id="sec-course-info-2-2-6-2">MATH 221 - Calculus I<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</dd>
+<dd><div class="para" id="sec-course-info-2-2-6-2">MATH 221 - Calculus I<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
 <dt id="sec-course-info-2-2-7">Academic Integrity<div class="autopermalink" data-description="Item: Academic Integrity"><a href="#sec-course-info-2-2-7" title="Copy heading and permalink for Item: Academic Integrity" aria-label="Copy heading and permalink for Item: Academic Integrity">🔗</a></div>
 </dt>
 <dd>
 <div class="para" id="sec-course-info-2-2-7-2">There is nothing more important in this class than <em class="emphasis">academic integrity</em>.  Sure, you want to master the topics in the course (and perhaps earn a good grade).  Sure, you want to enjoy doing it.  And, it is also important to know that your instructor intends to play his part in helping you be successful.  Succeeding, as you know, will require hard work and significant effort.  Cutting corners will not serve you well.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-course-info-2-2-7-3">University policy is clear: 
-<blockquote class="blockquote" id="sec-course-info-2-2-7-3-1">
+<div class="para" id="sec-course-info-2-2-7-3">University policy is clear: <blockquote class="blockquote" id="sec-course-info-2-2-7-3-1">
 <div class="para" id="sec-course-info-2-2-7-3-1-1">
 <em class="emphasis">Work submitted by an individual as her/his/their own course work in connection with an application for a position, promotion, tenure, salary increase, or other academic activity must be academically honest and a product of his or her own efforts. (A.II, 2.4, SUB.d.2, Professional and Ethical Standards for Employees and Students).</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -495,10 +480,8 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </dd>
 <dt id="sec-course-info-2-2-8"><div class="autopermalink" data-description="Item"><a href="#sec-course-info-2-2-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div></dt>
-<dd>
-<div class="para" id="sec-course-info-2-2-8-1">In this course, students are likely to use AI tools to enhance their learning experience. However, it is essential to use these tools ethically and responsibly. AI can be a valuable resource for understanding complex concepts and solving problems, but it should not replace your own critical thinking and problem-solving efforts. All submitted work must be your own, and any assistance from AI tools must be properly acknowledged on written work.  The use of AI is forbidden on assessments of your knowledge (e.g. exams, MyOpenMath). Using AI to complete work without acknowledgment will be considered a violation of academic integrity policies.  In mathematics, AI often gives incorrect responses (i.e. hallucinations) and large language models such as ChatGPT are widely deemed “unreliable” in doing mathematics.  Relaying AI responses that are incorrect will earn no credit.  However, not acknowledging the use of AI in a response is far worse – it is academic misconduct.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</dd>
+<dd><div class="para" id="sec-course-info-2-2-8-1">In this course, students are likely to use AI tools to enhance their learning experience. However, it is essential to use these tools ethically and responsibly. AI can be a valuable resource for understanding complex concepts and solving problems, but it should not replace your own critical thinking and problem-solving efforts. All submitted work must be your own, and any assistance from AI tools must be properly acknowledged on written work.  The use of AI is forbidden on assessments of your knowledge (e.g. exams, MyOpenMath). Using AI to complete work without acknowledgment will be considered a violation of academic integrity policies.  In mathematics, AI often gives incorrect responses (i.e. hallucinations) and large language models such as ChatGPT are widely deemed “unreliable” in doing mathematics.  Relaying AI responses that are incorrect will earn no credit.  However, not acknowledging the use of AI in a response is far worse – it is academic misconduct.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
 <dt id="sec-course-info-2-2-9">Course Materials<div class="autopermalink" data-description="Item: Course Materials"><a href="#sec-course-info-2-2-9" title="Copy heading and permalink for Item: Course Materials" aria-label="Copy heading and permalink for Item: Course Materials">🔗</a></div>
 </dt>
 <dd>
@@ -523,16 +506,16 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-course-info-2-2-9-3">Course materials beyond the textbook can be found at <a class="external" href="https://drbuske.github.io/Math312/frontmatter.html" target="_blank">https://drbuske.github.io/Math312</a>.  There you will find items such as the course syllabus, answers to activities from the textbook, and practice exams.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-9-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-course-info-2-2-9-3">Course materials beyond the textbook can be found at <a class="external" href="https://drbuske.github.io/Math312online/frontmatter.html" target="_blank">https://drbuske.github.io/Math312online</a>.  There you will find items such as answers to activities from the textbook and practice exam questions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-9-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-course-info-2-2-9-4">
-<dfn class="terminology">D2L Brightspace</dfn> will be the learning management tool used to organize the course.  Grades, a calendar, assignments, and exams as well as announcements we be posted on D2L.  Visit <a class="external" href="http://myhuskynet.stcloudstate.edu" target="_blank"><code class="code-inline tex2jax_ignore">http://myhuskynet.stcloudstate.edu</code></a> and login to your account using your Huskynet ID and password.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-9-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<dfn class="terminology">D2L Brightspace</dfn> will be the learning management tool used to organize the course.  Grades, a calendar, assignments, and exams as well as announcements we be managed within D2L.  Visit <a class="external" href="http://myhuskynet.stcloudstate.edu" target="_blank"><code class="code-inline tex2jax_ignore">http://myhuskynet.stcloudstate.edu</code></a> and login to your account using your Huskynet ID and password.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-9-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-course-info-2-2-9-5">Electronic homework will be done via the <a class="external" href="http://www.myopenmath.com" target="_blank"><code class="code-inline tex2jax_ignore">MyOpenMath</code></a> platform located at <a class="external" href="http://www.myopenmath.com" target="_blank"><code class="code-inline tex2jax_ignore">http://www.myopenmath.com</code></a>.  A free account can be attained by using any email address and choosing a password.  Please use your real name as grades need to be manually transferred to D2L.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-9-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-course-info-2-2-9-6">Course ID: <dfn class="terminology">323855</dfn><div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-9-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-course-info-2-2-9-7">Enrollment key: <dfn class="terminology">Buske312Su26</dfn><div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-9-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-course-info-2-2-9-7">Enrollment key: <dfn class="terminology">Buske312onlineF26</dfn><div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-2-2-9-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </dd>
 </dl>
@@ -541,10 +524,7 @@ eBookConfig.enable_chatcodes =  false;
 <section class="paragraphs" id="sec-course-info-3"><h3 class="heading"><span class="title">Course Overview.</span></h3>
 <div class="para" id="sec-course-info-3-2">People learn mathematics by <em class="emphasis">doing</em> mathematics.  Though the course is asynchronous and hence flexible, you would be well-advised to <em class="emphasis">do</em> mathematics each day.  The course calendar has dates for each topic.  Each section of the text contains videos, readings, core activities, and exercises to prepare you for each graded assessment.  Procrastination will not serve you well.  A number of tools are available to support you, but the most important tool will be your dedicated effort.<div class="autopermalink" data-description="Paragraph"><a href="#sec-course-info-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Course Overview"><a href="#sec-course-info-3" title="Copy heading and permalink for Paragraphs: Course Overview" aria-label="Copy heading and permalink for Paragraphs: Course Overview">🔗</a></div>
-</section><div class="autopermalink" data-description="Section: Course Information"><a href="#sec-course-info" title="Copy heading and permalink for Section: Course Information" aria-label="Copy heading and permalink for Section: Course Information">🔗</a></div>
-</section>
-</div>
+<div class="autopermalink" data-description="Paragraphs: Course Overview"><a href="#sec-course-info-3" title="Copy heading and permalink for Paragraphs: Course Overview" aria-label="Copy heading and permalink for Paragraphs: Course Overview">🔗</a></div></section><div class="autopermalink" data-description="Section: Course Information"><a href="#sec-course-info" title="Copy heading and permalink for Section: Course Information" aria-label="Copy heading and permalink for Section: Course Information">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="syllabus.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="syllabus-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

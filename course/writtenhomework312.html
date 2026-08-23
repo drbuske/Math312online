@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
+        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
-        "textmacros",
         "knowl"
       ]
     }
@@ -73,10 +73,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
+      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
-      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -119,16 +119,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.2';
+eBookConfig.runestone_version = '8.2.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d0616b3d72ab3b06.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.af9055d29ed602c4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -240,7 +240,7 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Detailed Syllabus</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="title">Course Information</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="syllabus-3.html" class="internal"><span class="title">Topics and Learning Outcomes</span></a></div></li>
@@ -458,12 +458,10 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="handout" id="writtenhomework312" data-margins="0.75in 0.75in 0.75in 0.75in">
-<h2 class="heading hide-type">
+<section class="handout" id="writtenhomework312" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
 <span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Written Homework</span><div class="print-links"><a href="?printpreview=writtenhomework312" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<section class="onepage" id="writtenhomework312-2">
-<div class="para" id="writtenhomework312-2-1">
+<section class="onepage" id="writtenhomework312-2"><div class="para" id="writtenhomework312-2-1">
 <em class="emphasis">Doing</em> mathematics is necessary to understand mathematics.  To that end, there are 13 written homework assignments you will submit this term.  Since there are 13 sections in the textbook, this means that there is one written homework assignment to be submitted for each two sections of content.  Deadlines for submission appear in D2L Brightspace.<div class="autopermalink" data-description="Paragraph"><a href="#writtenhomework312-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="writtenhomework312-2-2">Solutions to these exercises must be <em class="alert">written by hand</em> and not typed.  In addition, some exercises may require you to do a screen capture.  These include exercises in which Sage calculations are done and Checkpoint exercises in which you drag and drop answers.  Your goal is to effectively communicate these solutions.  <em class="alert">Submissions will be limited to a single file.  Please convert that single file to PDF before submission.</em><div class="autopermalink" data-description="Paragraph"><a href="#writtenhomework312-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -583,11 +581,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r0 l0 t0 lines">0</td>
 <td class="c m b1 r0 l0 t0 lines">Work is difficult to read or poorly organized</td>
 </tr>
-</table></div>
-</figure>
-<div class="para" id="writtenhomework312-2-6">Below are the 13 written homework assignments to be submitted to D2L.<div class="autopermalink" data-description="Paragraph"><a href="#writtenhomework312-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section>
-<div class="para logical" id="writtenhomework312-3">
+</table></div></figure><div class="para" id="writtenhomework312-2-6">Below are the 13 written homework assignments to be submitted to D2L.<div class="autopermalink" data-description="Paragraph"><a href="#writtenhomework312-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="para logical" id="writtenhomework312-3">
 <dl class="description-list">
 <dt id="writtenhomework312-3-1-1">Hwk 1 (1.1, 1.2)<div class="autopermalink" data-description="Item: Hwk 1 (1.1, 1.2)"><a href="#writtenhomework312-3-1-1" title="Copy heading and permalink for Item: Hwk 1 (1.1, 1.2)" aria-label="Copy heading and permalink for Item: Hwk 1 (1.1, 1.2)">🔗</a></div>
 </dt>
@@ -764,8 +759,7 @@ eBookConfig.enable_chatcodes =  false;
 </dl>
 <div class="autopermalink" data-description="Paragraph"><a href="#writtenhomework312-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Handout: Written Homework"><a href="#writtenhomework312" title="Copy heading and permalink for Handout: Written Homework" aria-label="Copy heading and permalink for Handout: Written Homework">🔗</a></div>
-</section>
+<div class="autopermalink" data-description="Handout: Written Homework"><a href="#writtenhomework312" title="Copy heading and permalink for Handout: Written Homework" aria-label="Copy heading and permalink for Handout: Written Homework">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-assessments.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch1activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

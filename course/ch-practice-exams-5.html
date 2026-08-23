@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
+        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
-        "textmacros",
         "knowl"
       ]
     }
@@ -73,10 +73,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
+      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
-      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -119,16 +119,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.2';
+eBookConfig.runestone_version = '8.2.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d0616b3d72ab3b06.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.af9055d29ed602c4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -240,7 +240,7 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Detailed Syllabus</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="title">Course Information</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="syllabus-3.html" class="internal"><span class="title">Topics and Learning Outcomes</span></a></div></li>
@@ -469,12 +469,10 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="handout" id="ch-practice-exams-5" data-margins="0.75in 0.75in 0.75in 0.75in">
-<h2 class="heading hide-type">
+<section class="handout" id="ch-practice-exams-5" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
 <span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chapter 4 Practice Exam</span><div class="print-links"><a href="?printpreview=ch-practice-exams-5" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<section class="section" id="ch-practice-exams-5-2">
-<h3 class="heading hide-type">
+<section class="section" id="ch-practice-exams-5-2"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Topics</span>
 </h3>
 <ul class="disc" id="ch-practice-exams-5-2-2">
@@ -497,8 +495,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="para" id="ch-practice-exams-5-2-3">Be sure to try each question before looking at the solutions.<div class="autopermalink" data-description="Paragraph"><a href="#ch-practice-exams-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<section class="exercises" id="exercises-practiceexam4">
-<h4 class="heading hide-type">
+<section class="exercises" id="exercises-practiceexam4"><h4 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Questions</span>
 </h4>
 <article class="exercise exercise-like" id="exercise-eigen-definition"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
@@ -507,26 +504,20 @@ eBookConfig.enable_chatcodes =  false;
 2 \amp 1 \\
 1 \amp 2
 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigen-definition-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exercise-eigen-definition-1-2">Verify that <span class="process-math">\(\mathbf{v} =
+</div> <div class="para" id="exercise-eigen-definition-1-2">Verify that <span class="process-math">\(\mathbf{v} =
 \begin{bmatrix}1\\1\end{bmatrix}\)</span> is an eigenvector of <span class="process-math">\(A\text{,}\)</span> and find its corresponding eigenvalue.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigen-definition-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exercise-eigen-definition-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-eigen-definition-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-eigen-definition-2-1">Compute <span class="process-math">\(A\mathbf{v}\)</span> and check whether it is a scalar multiple of <span class="process-math">\(\mathbf{v}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigen-definition-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 1.1"><a href="#exercise-eigen-definition-2" title="Copy heading and permalink for Hint 1.1" aria-label="Copy heading and permalink for Hint 1.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigen-definition-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-eigen-definition-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exercise-eigen-definition-3-1">
 <span class="process-math">\(\mathbf{v}\)</span> is an eigenvector with eigenvalue <span class="process-math">\(\lambda=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigen-definition-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 1.1"><a href="#exercise-eigen-definition-3" title="Copy heading and permalink for Answer 1.1" aria-label="Copy heading and permalink for Answer 1.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigen-definition-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-eigen-definition-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercise-eigen-definition-4-1">We compute <span class="process-math">\(A\mathbf{v}
 =
 \begin{bmatrix}
@@ -548,9 +539,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Solution 1.1"><a href="#exercise-eigen-definition-4" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 1"><a href="#exercise-eigen-definition" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-find-eigenvalues-2x2"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1"><a href="#exercise-eigen-definition" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="exercise-find-eigenvalues-2x2"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercise-find-eigenvalues-2x2-1-1">Find the eigenvalues of the matrix <span class="process-math">\(A =
 \begin{bmatrix}
 4 \amp -2 \\
@@ -558,20 +547,15 @@ eBookConfig.enable_chatcodes =  false;
 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-find-eigenvalues-2x2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exercise-find-eigenvalues-2x2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-find-eigenvalues-2x2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-find-eigenvalues-2x2-2-1">Eigenvalues satisfy <span class="process-math">\(\det(A-\lambda I)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-find-eigenvalues-2x2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 2.1"><a href="#exercise-find-eigenvalues-2x2-2" title="Copy heading and permalink for Hint 2.1" aria-label="Copy heading and permalink for Hint 2.1">🔗</a></div>
-</div></details>
-<details id="exercise-find-eigenvalues-2x2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-find-eigenvalues-2x2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exercise-find-eigenvalues-2x2-3-1">The eigenvalues are <span class="process-math">\(\lambda=2\)</span> and <span class="process-math">\(\lambda=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-find-eigenvalues-2x2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 2.1"><a href="#exercise-find-eigenvalues-2x2-3" title="Copy heading and permalink for Answer 2.1" aria-label="Copy heading and permalink for Answer 2.1">🔗</a></div>
-</div></details>
-<details id="exercise-find-eigenvalues-2x2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-find-eigenvalues-2x2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercise-find-eigenvalues-2x2-4-1">We compute <span class="process-math">\(\det(A-\lambda I)
 =
 \det
@@ -592,16 +576,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Solution 2.1"><a href="#exercise-find-eigenvalues-2x2-4" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 2"><a href="#exercise-find-eigenvalues-2x2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-eigen-geometry-enhanced"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2"><a href="#exercise-find-eigenvalues-2x2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="exercise-eigen-geometry-enhanced"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercise-eigen-geometry-enhanced-1-1">Let <span class="process-math">\(A =
 \begin{bmatrix}
 2 \amp 0 \\
 0 \amp -1
 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigen-geometry-enhanced-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha lower-alpha-level-1" id="exercise-eigen-geometry-enhanced-1-2">
+</div> <ol class="lower-alpha lower-alpha-level-1" id="exercise-eigen-geometry-enhanced-1-2">
 <li id="exercise-eigen-geometry-enhanced-1-2-1">
 <div class="para" id="exercise-eigen-geometry-enhanced-1-2-1-1">Describe geometrically how <span class="process-math">\(A\)</span> acts on vectors in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigen-geometry-enhanced-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -614,20 +595,15 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="solutions">
-<details id="exercise-eigen-geometry-enhanced-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-eigen-geometry-enhanced-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-eigen-geometry-enhanced-2-1">Examine what happens to vectors lying on each coordinate axis, and interpret the sign and magnitude of the resulting scalar multiples.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigen-geometry-enhanced-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 3.1"><a href="#exercise-eigen-geometry-enhanced-2" title="Copy heading and permalink for Hint 3.1" aria-label="Copy heading and permalink for Hint 3.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigen-geometry-enhanced-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-eigen-geometry-enhanced-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exercise-eigen-geometry-enhanced-3-1">The matrix stretches vectors on the <span class="process-math">\(x\)</span>-axis by a factor of 2 and reflects vectors on the <span class="process-math">\(y\)</span>-axis across the origin. The eigenvalues are <span class="process-math">\(2\)</span> and <span class="process-math">\(-1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigen-geometry-enhanced-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 3.1"><a href="#exercise-eigen-geometry-enhanced-3" title="Copy heading and permalink for Answer 3.1" aria-label="Copy heading and permalink for Answer 3.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigen-geometry-enhanced-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-eigen-geometry-enhanced-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha lower-alpha-level-1" id="exercise-eigen-geometry-enhanced-4-1">
 <li id="exercise-eigen-geometry-enhanced-4-1-1">
 <div class="para" id="exercise-eigen-geometry-enhanced-4-1-1-1">The matrix <span class="process-math">\(A\)</span> acts independently on each coordinate. A vector <span class="process-math">\(\begin{bmatrix}x\\y\end{bmatrix}\)</span> is sent to <span class="process-math">\(\begin{bmatrix}2x\\-y\end{bmatrix}.\)</span> Geometrically, this stretches space horizontally by a factor of 2 and reflects vectors vertically across the origin.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigen-geometry-enhanced-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -655,9 +631,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Solution 3.1"><a href="#exercise-eigen-geometry-enhanced-4" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 3"><a href="#exercise-eigen-geometry-enhanced" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-eigenvectors-linear-combination"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 3"><a href="#exercise-eigen-geometry-enhanced" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="exercise-eigenvectors-linear-combination"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exercise-eigenvectors-linear-combination-1-1">
 <div class="para">Consider the matrix <span class="process-math">\(A =
 \begin{bmatrix}
@@ -678,8 +652,7 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvectors-linear-combination-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha lower-alpha-level-1" id="exercise-eigenvectors-linear-combination-1-2">
+</div> <ol class="lower-alpha lower-alpha-level-1" id="exercise-eigenvectors-linear-combination-1-2">
 <li id="exercise-eigenvectors-linear-combination-1-2-1">
 <div class="para" id="exercise-eigenvectors-linear-combination-1-2-1-1">Show that <span class="process-math">\(\mathbf{v}_1\text{,}\)</span> <span class="process-math">\(\mathbf{v}_2\text{,}\)</span> and <span class="process-math">\(\mathbf{v}_3\)</span> are eigenvectors of <span class="process-math">\(A\text{,}\)</span> and find their associated eigenvalues.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvectors-linear-combination-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -700,21 +673,16 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="solutions">
-<details id="exercise-eigenvectors-linear-combination-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-eigenvectors-linear-combination-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-eigenvectors-linear-combination-2-1">For part (a), check whether <span class="process-math">\(A\mathbf{v}_i\)</span> is a scalar multiple of <span class="process-math">\(\mathbf{v}_i\text{.}\)</span> For parts (b) and (c), work entirely in the eigenvector basis.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvectors-linear-combination-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 4.1"><a href="#exercise-eigenvectors-linear-combination-2" title="Copy heading and permalink for Hint 4.1" aria-label="Copy heading and permalink for Hint 4.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigenvectors-linear-combination-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-eigenvectors-linear-combination-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exercise-eigenvectors-linear-combination-3-1">The eigenvalues are <span class="process-math">\(4\text{,}\)</span> <span class="process-math">\(2\text{,}\)</span> and <span class="process-math">\(1\text{.}\)</span> The vector <span class="process-math">\(\mathbf{x}\)</span> can be written as <span class="process-math">\(\mathbf{x}
 = \mathbf{v}_1 + 2\mathbf{v}_2 + 2\mathbf{v}_3.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvectors-linear-combination-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 4.1"><a href="#exercise-eigenvectors-linear-combination-3" title="Copy heading and permalink for Answer 4.1" aria-label="Copy heading and permalink for Answer 4.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigenvectors-linear-combination-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-eigenvectors-linear-combination-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha lower-alpha-level-1" id="exercise-eigenvectors-linear-combination-4-1">
 <li id="exercise-eigenvectors-linear-combination-4-1-1">
 <div class="para logical" id="exercise-eigenvectors-linear-combination-4-1-1-1">
@@ -858,34 +826,26 @@ A^{-1}\mathbf{x}
 <div class="autopermalink" data-description="Solution 4.1"><a href="#exercise-eigenvectors-linear-combination-4" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 4"><a href="#exercise-eigenvectors-linear-combination" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-eigenvectors-given-lambda"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 4"><a href="#exercise-eigenvectors-linear-combination" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="exercise-eigenvectors-given-lambda"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercise-eigenvectors-given-lambda-1-1">Let <span class="process-math">\(A =
 \begin{bmatrix}
 4 \amp 1 \\
 0 \amp 2
 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvectors-given-lambda-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exercise-eigenvectors-given-lambda-1-2">Find a basis for the eigenspace corresponding to the eigenvalue <span class="process-math">\(\lambda=2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvectors-given-lambda-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exercise-eigenvectors-given-lambda-1-2">Find a basis for the eigenspace corresponding to the eigenvalue <span class="process-math">\(\lambda=2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvectors-given-lambda-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exercise-eigenvectors-given-lambda-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-eigenvectors-given-lambda-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-eigenvectors-given-lambda-2-1">Solve <span class="process-math">\((A-2I)\mathbf{x}=\mathbf{0}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvectors-given-lambda-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 5.1"><a href="#exercise-eigenvectors-given-lambda-2" title="Copy heading and permalink for Hint 5.1" aria-label="Copy heading and permalink for Hint 5.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigenvectors-given-lambda-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-eigenvectors-given-lambda-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exercise-eigenvectors-given-lambda-3-1">A basis is <span class="process-math">\(\left\{
 \begin{bmatrix}-1\\2\end{bmatrix}
 \right\}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvectors-given-lambda-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 5.1"><a href="#exercise-eigenvectors-given-lambda-3" title="Copy heading and permalink for Answer 5.1" aria-label="Copy heading and permalink for Answer 5.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigenvectors-given-lambda-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-eigenvectors-given-lambda-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercise-eigenvectors-given-lambda-4-1">We form <span class="process-math">\(A-2I =
 \begin{bmatrix}
 2 \amp 1 \\
@@ -899,9 +859,7 @@ A^{-1}\mathbf{x}
 <div class="autopermalink" data-description="Solution 5.1"><a href="#exercise-eigenvectors-given-lambda-4" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 5"><a href="#exercise-eigenvectors-given-lambda" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-eigenvalues-triangular"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 5"><a href="#exercise-eigenvectors-given-lambda" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="exercise-eigenvalues-triangular"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercise-eigenvalues-triangular-1-1">Compute the eigenvalues of <span class="process-math">\(A =
 \begin{bmatrix}
 1 \amp 2 \amp 0 \\
@@ -910,20 +868,15 @@ A^{-1}\mathbf{x}
 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalues-triangular-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exercise-eigenvalues-triangular-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-eigenvalues-triangular-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-eigenvalues-triangular-2-1">Consider how the determinant of <span class="process-math">\(A-\lambda I\)</span> simplifies.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalues-triangular-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 6.1"><a href="#exercise-eigenvalues-triangular-2" title="Copy heading and permalink for Hint 6.1" aria-label="Copy heading and permalink for Hint 6.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigenvalues-triangular-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-eigenvalues-triangular-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exercise-eigenvalues-triangular-3-1">The eigenvalues are <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(3\text{,}\)</span> and <span class="process-math">\(5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalues-triangular-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 6.1"><a href="#exercise-eigenvalues-triangular-3" title="Copy heading and permalink for Answer 6.1" aria-label="Copy heading and permalink for Answer 6.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigenvalues-triangular-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-eigenvalues-triangular-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercise-eigenvalues-triangular-4-1">Since <span class="process-math">\(A-\lambda I\)</span> is upper triangular, its determinant is the product of the diagonal entries: <span class="process-math">\((1-\lambda)(3-\lambda)(5-\lambda).\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalues-triangular-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="exercise-eigenvalues-triangular-4-2">Setting this equal to zero gives the eigenvalues <span class="process-math">\(\lambda=1\text{,}\)</span> <span class="process-math">\(\lambda=3\text{,}\)</span> and <span class="process-math">\(\lambda=5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalues-triangular-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -931,28 +884,20 @@ A^{-1}\mathbf{x}
 <div class="autopermalink" data-description="Solution 6.1"><a href="#exercise-eigenvalues-triangular-4" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 6"><a href="#exercise-eigenvalues-triangular" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-eigenvalue-geometry"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 6"><a href="#exercise-eigenvalues-triangular" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="exercise-eigenvalue-geometry"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercise-eigenvalue-geometry-1-1">Suppose a <span class="process-math">\(2\times2\)</span> matrix <span class="process-math">\(A\)</span> has a single eigenvalue <span class="process-math">\(\lambda\)</span> of multiplicity two.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalue-geometry-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exercise-eigenvalue-geometry-1-2">Explain what this means for the action of <span class="process-math">\(A\)</span> on vectors in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalue-geometry-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exercise-eigenvalue-geometry-1-2">Explain what this means for the action of <span class="process-math">\(A\)</span> on vectors in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalue-geometry-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exercise-eigenvalue-geometry-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-eigenvalue-geometry-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-eigenvalue-geometry-2-1">Consider how many independent directions are preserved by the transformation.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalue-geometry-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 7.1"><a href="#exercise-eigenvalue-geometry-2" title="Copy heading and permalink for Hint 7.1" aria-label="Copy heading and permalink for Hint 7.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigenvalue-geometry-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-eigenvalue-geometry-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exercise-eigenvalue-geometry-3-1">All eigenvectors lie along a single line through the origin.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalue-geometry-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 7.1"><a href="#exercise-eigenvalue-geometry-3" title="Copy heading and permalink for Answer 7.1" aria-label="Copy heading and permalink for Answer 7.1">🔗</a></div>
-</div></details>
-<details id="exercise-eigenvalue-geometry-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-eigenvalue-geometry-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercise-eigenvalue-geometry-4-1">A repeated eigenvalue means that the characteristic polynomial has only one root.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalue-geometry-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="exercise-eigenvalue-geometry-4-2">The eigenspace may still be one‑dimensional, meaning there is only one line of vectors that are stretched by the transformation. Vectors not on this line are generally rotated or sheared.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eigenvalue-geometry-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -992,32 +937,24 @@ A^{-1}\mathbf{x}
 <div class="autopermalink" data-description="Solution 7.1"><a href="#exercise-eigenvalue-geometry-4" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 7"><a href="#exercise-eigenvalue-geometry" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-diagonalizable-or-not"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 7"><a href="#exercise-eigenvalue-geometry" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="exercise-diagonalizable-or-not"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercise-diagonalizable-or-not-1-1">Let <span class="process-math">\(A =
 \begin{bmatrix}
 2 \amp 1 \\
 0 \amp 2
 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalizable-or-not-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exercise-diagonalizable-or-not-1-2">Determine whether <span class="process-math">\(A\)</span> is diagonalizable. Justify your answer.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalizable-or-not-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exercise-diagonalizable-or-not-1-2">Determine whether <span class="process-math">\(A\)</span> is diagonalizable. Justify your answer.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalizable-or-not-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exercise-diagonalizable-or-not-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-diagonalizable-or-not-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-diagonalizable-or-not-2-1">Find the eigenvalues and the dimension of each eigenspace.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalizable-or-not-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 8.1"><a href="#exercise-diagonalizable-or-not-2" title="Copy heading and permalink for Hint 8.1" aria-label="Copy heading and permalink for Hint 8.1">🔗</a></div>
-</div></details>
-<details id="exercise-diagonalizable-or-not-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-diagonalizable-or-not-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exercise-diagonalizable-or-not-3-1">The matrix <span class="process-math">\(A\)</span> is not diagonalizable.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalizable-or-not-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 8.1"><a href="#exercise-diagonalizable-or-not-3" title="Copy heading and permalink for Answer 8.1" aria-label="Copy heading and permalink for Answer 8.1">🔗</a></div>
-</div></details>
-<details id="exercise-diagonalizable-or-not-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-diagonalizable-or-not-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exercise-diagonalizable-or-not-4-1">The characteristic polynomial of <span class="process-math">\(A\)</span> is <span class="process-math">\(\det(A-\lambda I)
 =
 \det
@@ -1038,17 +975,14 @@ A^{-1}\mathbf{x}
 <div class="autopermalink" data-description="Solution 8.1"><a href="#exercise-diagonalizable-or-not-4" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 8"><a href="#exercise-diagonalizable-or-not" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-diagonalization-3x3-repeated-clean"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 8"><a href="#exercise-diagonalizable-or-not" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="exercise-diagonalization-3x3-repeated-clean"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercise-diagonalization-3x3-repeated-clean-1-1">Consider the matrix <span class="process-math">\(A =
 \begin{bmatrix}
 2 \amp 1 \amp 0 \\
 1 \amp 2 \amp 0 \\
 0 \amp 0 \amp 3
 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalization-3x3-repeated-clean-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha lower-alpha-level-1" id="exercise-diagonalization-3x3-repeated-clean-1-2">
+</div> <ol class="lower-alpha lower-alpha-level-1" id="exercise-diagonalization-3x3-repeated-clean-1-2">
 <li id="exercise-diagonalization-3x3-repeated-clean-1-2-1">
 <div class="para" id="exercise-diagonalization-3x3-repeated-clean-1-2-1-1">Find the eigenvalues of <span class="process-math">\(A\)</span> and their algebraic multiplicities.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalization-3x3-repeated-clean-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1066,20 +1000,15 @@ A^{-1}\mathbf{x}
 </li>
 </ol>
 <div class="solutions">
-<details id="exercise-diagonalization-3x3-repeated-clean-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-diagonalization-3x3-repeated-clean-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-diagonalization-3x3-repeated-clean-2-1">First compute <span class="process-math">\(\det(A-\lambda I)\text{.}\)</span> Then solve <span class="process-math">\((A-\lambda I)\mathbf{x}=\mathbf{0}\)</span> for each eigenvalue. Remember that <span class="process-math">\(A\)</span> is diagonalizable if it has three linearly independent eigenvectors.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalization-3x3-repeated-clean-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 9.1"><a href="#exercise-diagonalization-3x3-repeated-clean-2" title="Copy heading and permalink for Hint 9.1" aria-label="Copy heading and permalink for Hint 9.1">🔗</a></div>
-</div></details>
-<details id="exercise-diagonalization-3x3-repeated-clean-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-diagonalization-3x3-repeated-clean-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exercise-diagonalization-3x3-repeated-clean-3-1">The eigenvalues are <span class="process-math">\(3\)</span> with multiplicity 2 and <span class="process-math">\(1\)</span> with multiplicity 1. The matrix is diagonalizable.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalization-3x3-repeated-clean-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 9.1"><a href="#exercise-diagonalization-3x3-repeated-clean-3" title="Copy heading and permalink for Answer 9.1" aria-label="Copy heading and permalink for Answer 9.1">🔗</a></div>
-</div></details>
-<details id="exercise-diagonalization-3x3-repeated-clean-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-diagonalization-3x3-repeated-clean-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha lower-alpha-level-1" id="exercise-diagonalization-3x3-repeated-clean-4-1">
 <li id="exercise-diagonalization-3x3-repeated-clean-4-1-1">
 <div class="para logical" id="exercise-diagonalization-3x3-repeated-clean-4-1-1-1">
@@ -1159,16 +1088,13 @@ D =
 <div class="autopermalink" data-description="Solution 9.1"><a href="#exercise-diagonalization-3x3-repeated-clean-4" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 9"><a href="#exercise-diagonalization-3x3-repeated-clean" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-diagonalization-2x2-nth-power"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 9"><a href="#exercise-diagonalization-3x3-repeated-clean" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="exercise-diagonalization-2x2-nth-power"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercise-diagonalization-2x2-nth-power-1-1">Let <span class="process-math">\(A =
 \begin{bmatrix}
 3 \amp 2 \\
 2 \amp 3
 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalization-2x2-nth-power-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha lower-alpha-level-1" id="exercise-diagonalization-2x2-nth-power-1-2">
+</div> <ol class="lower-alpha lower-alpha-level-1" id="exercise-diagonalization-2x2-nth-power-1-2">
 <li id="exercise-diagonalization-2x2-nth-power-1-2-1">
 <div class="para" id="exercise-diagonalization-2x2-nth-power-1-2-1-1">Find the eigenvalues and eigenvectors of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalization-2x2-nth-power-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1186,14 +1112,11 @@ D =
 </li>
 </ol>
 <div class="solutions">
-<details id="exercise-diagonalization-2x2-nth-power-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-diagonalization-2x2-nth-power-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-diagonalization-2x2-nth-power-2-1">The eigenvalues satisfy <span class="process-math">\(\det(A-\lambda I)=0\text{.}\)</span> If <span class="process-math">\(A=PDP^{-1}\text{,}\)</span> then <span class="process-math">\(A^n = PD^nP^{-1}\text{.}\)</span> Powers of a diagonal matrix are easy to compute.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalization-2x2-nth-power-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 10.1"><a href="#exercise-diagonalization-2x2-nth-power-2" title="Copy heading and permalink for Hint 10.1" aria-label="Copy heading and permalink for Hint 10.1">🔗</a></div>
-</div></details>
-<details id="exercise-diagonalization-2x2-nth-power-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-diagonalization-2x2-nth-power-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para logical" id="exercise-diagonalization-2x2-nth-power-3-1">
 <div class="para">The eigenvalues are <span class="process-math">\(5\)</span> and <span class="process-math">\(1\text{.}\)</span> A formula for <span class="process-math">\(A^n\)</span> is</div>
 <div class="displaymath process-math" id="exercise-diagonalization-2x2-nth-power-3-1-4">
@@ -1210,9 +1133,7 @@ A^n
 <div class="autopermalink" data-description="Paragraph"><a href="#exercise-diagonalization-2x2-nth-power-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 10.1"><a href="#exercise-diagonalization-2x2-nth-power-3" title="Copy heading and permalink for Answer 10.1" aria-label="Copy heading and permalink for Answer 10.1">🔗</a></div>
-</div></details>
-<details id="exercise-diagonalization-2x2-nth-power-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-diagonalization-2x2-nth-power-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha lower-alpha-level-1" id="exercise-diagonalization-2x2-nth-power-4-1">
 <li id="exercise-diagonalization-2x2-nth-power-4-1-1">
 <div class="para logical" id="exercise-diagonalization-2x2-nth-power-4-1-1-1">
@@ -1295,9 +1216,7 @@ A^n
 <div class="autopermalink" data-description="Solution 10.1"><a href="#exercise-diagonalization-2x2-nth-power-4" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 10"><a href="#exercise-diagonalization-2x2-nth-power" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exercise-complex-eigenvalues-real-diagonalization"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 10"><a href="#exercise-diagonalization-2x2-nth-power" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div></article><article class="exercise exercise-like" id="exercise-complex-eigenvalues-real-diagonalization"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exercise-complex-eigenvalues-real-diagonalization-1-1">Let <span class="process-math">\(A =
 \begin{bmatrix}
 1 \amp 2 \\
@@ -1307,8 +1226,7 @@ A^n
 a \amp -b \\
 b \amp a
 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-complex-eigenvalues-real-diagonalization-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha lower-alpha-level-1" id="exercise-complex-eigenvalues-real-diagonalization-1-2">
+</div> <ol class="lower-alpha lower-alpha-level-1" id="exercise-complex-eigenvalues-real-diagonalization-1-2">
 <li id="exercise-complex-eigenvalues-real-diagonalization-1-2-1">
 <div class="para" id="p-derived-exercise-complex-eigenvalues-real-diagonalization-1-2-1">Show that the eigenvalues of <span class="process-math">\(A\)</span> are complex.</div>
 <div class="autopermalink" data-description="Item 11.a"><a href="#exercise-complex-eigenvalues-real-diagonalization-1-2-1" title="Copy heading and permalink for Item 11.a" aria-label="Copy heading and permalink for Item 11.a">🔗</a></div>
@@ -1334,14 +1252,11 @@ b \amp a
 </li>
 </ol>
 <div class="solutions">
-<details id="exercise-complex-eigenvalues-real-diagonalization-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exercise-complex-eigenvalues-real-diagonalization-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exercise-complex-eigenvalues-real-diagonalization-2-1">For part (a), compute <span class="process-math">\(\det(A - \lambda I)\text{.}\)</span> For the final part, do not compute <span class="process-math">\(P^{-1}\)</span> directly; instead, use how <span class="process-math">\(A\)</span> acts on <span class="process-math">\(\mathbf v_1\)</span> and <span class="process-math">\(\mathbf v_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-complex-eigenvalues-real-diagonalization-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 11.1"><a href="#exercise-complex-eigenvalues-real-diagonalization-2" title="Copy heading and permalink for Hint 11.1" aria-label="Copy heading and permalink for Hint 11.1">🔗</a></div>
-</div></details>
-<details id="exercise-complex-eigenvalues-real-diagonalization-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exercise-complex-eigenvalues-real-diagonalization-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para logical" id="exercise-complex-eigenvalues-real-diagonalization-3-1">
 <div class="para">The eigenvalues are <span class="process-math">\(1 \pm i\sqrt{6}\text{.}\)</span> One valid choice of <span class="process-math">\(P\)</span> satisfies <span class="process-math">\(A = PCP^{-1}\)</span> with</div>
 <div class="displaymath process-math" id="exercise-complex-eigenvalues-real-diagonalization-3-1-4">
@@ -1356,9 +1271,7 @@ C =
 <div class="autopermalink" data-description="Paragraph"><a href="#exercise-complex-eigenvalues-real-diagonalization-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 11.1"><a href="#exercise-complex-eigenvalues-real-diagonalization-3" title="Copy heading and permalink for Answer 11.1" aria-label="Copy heading and permalink for Answer 11.1">🔗</a></div>
-</div></details>
-<details id="exercise-complex-eigenvalues-real-diagonalization-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exercise-complex-eigenvalues-real-diagonalization-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha lower-alpha-level-1" id="exercise-complex-eigenvalues-real-diagonalization-4-1">
 <li id="exercise-complex-eigenvalues-real-diagonalization-4-1-1">
 <div class="para logical" id="exercise-complex-eigenvalues-real-diagonalization-4-1-1-1">
@@ -1479,11 +1392,7 @@ A\mathbf v_2 =
 <div class="autopermalink" data-description="Solution 11.1"><a href="#exercise-complex-eigenvalues-real-diagonalization-4" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 11"><a href="#exercise-complex-eigenvalues-real-diagonalization" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div>
-</article><div class="autopermalink" data-description="Exercises: Questions"><a href="#exercises-practiceexam4" title="Copy heading and permalink for Exercises: Questions" aria-label="Copy heading and permalink for Exercises: Questions">🔗</a></div>
-</section><div class="autopermalink" data-description="Section: Topics"><a href="#ch-practice-exams-5-2" title="Copy heading and permalink for Section: Topics" aria-label="Copy heading and permalink for Section: Topics">🔗</a></div>
-</section><div class="autopermalink" data-description="Handout: Chapter 4 Practice Exam"><a href="#ch-practice-exams-5" title="Copy heading and permalink for Handout: Chapter 4 Practice Exam" aria-label="Copy heading and permalink for Handout: Chapter 4 Practice Exam">🔗</a></div>
-</section>
+<div class="autopermalink" data-description="Exercise 11"><a href="#exercise-complex-eigenvalues-real-diagonalization" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div></article><div class="autopermalink" data-description="Exercises: Questions"><a href="#exercises-practiceexam4" title="Copy heading and permalink for Exercises: Questions" aria-label="Copy heading and permalink for Exercises: Questions">🔗</a></div></section><div class="autopermalink" data-description="Section: Topics"><a href="#ch-practice-exams-5-2" title="Copy heading and permalink for Section: Topics" aria-label="Copy heading and permalink for Section: Topics">🔗</a></div></section><div class="autopermalink" data-description="Handout: Chapter 4 Practice Exam"><a href="#ch-practice-exams-5" title="Copy heading and permalink for Handout: Chapter 4 Practice Exam" aria-label="Copy heading and permalink for Handout: Chapter 4 Practice Exam">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-practice-exams-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-practice-exams-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

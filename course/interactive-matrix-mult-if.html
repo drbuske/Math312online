@@ -29,11 +29,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
+        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
-        "textmacros",
         "knowl"
       ]
     }
@@ -66,10 +66,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
+      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
-      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -168,21 +168,13 @@ window.MathJax = {
 \definecolor{fillinmathshade}{gray}{0.9}
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<div style="aspect-ratio: 1.555555555555556;">
-<div class="sbsgroup">
-<div class="sidebyside">
-<div class="sbsrow" style="margin-left:10%;margin-right:10%;grid-template-columns:100%;column-gap:0%;">
-<div class="sbspanel sbspanel--top top" style=""><canvas id="mult-sliders" style="width:480px; height:96px; display: block; aspect-ratio:5;" width="480" height="96"></canvas></div>
-</div>
-</div>
-<div class="sidebyside">
-<div class="sbsrow" style="margin-left:2%;margin-right:2%;grid-template-columns:46.875% 46.875%;column-gap:6%;">
+<div style="aspect-ratio: 1.555555555555556;"><div class="sbsgroup">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;grid-template-columns:100%;column-gap:0%;"><div class="sbspanel sbspanel--top top" style=""><canvas id="mult-sliders" style="width:480px; height:96px; display: block; aspect-ratio:5;" width="480" height="96"></canvas></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2%;margin-right:2%;grid-template-columns:46.875% 46.875%;column-gap:6%;">
 <div class="sbspanel sbspanel--top top" style=""><canvas id="mult-left" style="width:270px; height:270px; display: block; aspect-ratio:1;" width="270" height="270"></canvas></div>
 <div class="sbspanel sbspanel--top top" style=""><canvas id="mult-right" style="width:270px; height:270px; display: block; aspect-ratio:1;" width="270" height="270"></canvas></div>
-</div>
-</div>
-</div>
-</div>
+</div></div>
+</div></div>
 <script src="external/jslibrary/figures.js"></script><script src="external/jslibrary/mult.c.js"></script>
 </body>
 </html>

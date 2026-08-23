@@ -36,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
+        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
-        "textmacros",
         "knowl"
       ]
     }
@@ -73,10 +73,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
+      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
-      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -119,16 +119,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.2';
+eBookConfig.runestone_version = '8.2.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d0616b3d72ab3b06.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.af9055d29ed602c4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -240,7 +240,7 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Detailed Syllabus</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="title">Course Information</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="syllabus-3.html" class="internal"><span class="title">Topics and Learning Outcomes</span></a></div></li>
@@ -469,12 +469,10 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="handout" id="ch-practice-exams-2" data-margins="0.75in 0.75in 0.75in 0.75in">
-<h2 class="heading hide-type">
+<section class="handout" id="ch-practice-exams-2" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
 <span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chapter 1 Practice Exam</span><div class="print-links"><a href="?printpreview=ch-practice-exams-2" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<section class="section" id="ch-practice-exams-2-2">
-<h3 class="heading hide-type">
+<section class="section" id="ch-practice-exams-2-2"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Topics</span>
 </h3>
 <ul class="disc" id="ch-practice-exams-2-2-2">
@@ -503,14 +501,12 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="para" id="ch-practice-exams-2-2-3">Be sure to try each question before looking at the solutions.<div class="autopermalink" data-description="Paragraph"><a href="#ch-practice-exams-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<section class="exercises" id="exercises-practiceexam1">
-<h4 class="heading hide-type">
+<section class="exercises" id="exercises-practiceexam1"><h4 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Questions</span>
 </h4>
 <article class="exercise exercise-like" id="exam-1-1-1"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exam-1-1-1-1-1">Consider the equation <span class="process-math">\(2x - y = 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha ol-marker-5" id="exam-1-1-1-1-2">
+</div> <ol class="lower-alpha ol-marker-5" id="exam-1-1-1-1-2">
 <li id="exam-1-1-1-1-2-1">
 <div class="para" id="p-derived-exam-1-1-1-1-2-1">How many solutions does this equation have?</div>
 <div class="autopermalink" data-description="Item 1.a"><a href="#exam-1-1-1-1-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
@@ -521,14 +517,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="solutions">
-<details id="exam-1-1-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-1-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-1-1-2-1">Think about what the graph of a single linear equation in two unknowns looks like.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 1.1"><a href="#exam-1-1-1-2" title="Copy heading and permalink for Hint 1.1" aria-label="Copy heading and permalink for Hint 1.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-1-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-1-1-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exam-1-1-1-3-1">
 <li id="exam-1-1-1-3-1-1">
 <div class="para" id="p-derived-exam-1-1-1-3-1-1">Infinitely many solutions.</div>
@@ -540,17 +533,13 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Answer 1.1"><a href="#exam-1-1-1-3" title="Copy heading and permalink for Answer 1.1" aria-label="Copy heading and permalink for Answer 1.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-1-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-1-1-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-1-1-1-4-1">A single linear equation in two unknowns represents a line in the coordinate plane. Every point on this line satisfies the equation, so there are infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 1.1"><a href="#exam-1-1-1-4" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 1"><a href="#exam-1-1-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-1-1-2"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1"><a href="#exam-1-1-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="exam-1-1-2"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-1-1-2-1-1">
 <div class="para">Consider the system of equations</div>
 <div class="displaymath process-math" id="exam-1-1-2-1-1-1">
@@ -562,8 +551,7 @@ x - y \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha ol-marker-5" id="exam-1-1-2-1-2">
+</div> <ol class="lower-alpha ol-marker-5" id="exam-1-1-2-1-2">
 <li id="exam-1-1-2-1-2-1">
 <div class="para" id="p-derived-exam-1-1-2-1-2-1">How many solutions does this system have?</div>
 <div class="autopermalink" data-description="Item 2.a"><a href="#exam-1-1-2-1-2-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
@@ -574,14 +562,11 @@ x - y \amp= 2
 </li>
 </ol>
 <div class="solutions">
-<details id="exam-1-1-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-1-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-1-2-2-1">Think about how two non‑parallel lines intersect.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 2.1"><a href="#exam-1-1-2-2" title="Copy heading and permalink for Hint 2.1" aria-label="Copy heading and permalink for Hint 2.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-1-2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exam-1-1-2-3-1">
 <li id="exam-1-1-2-3-1-1">
 <div class="para" id="p-derived-exam-1-1-2-3-1-1">Exactly one solution.</div>
@@ -593,17 +578,13 @@ x - y \amp= 2
 </li>
 </ol>
 <div class="autopermalink" data-description="Answer 2.1"><a href="#exam-1-1-2-3" title="Copy heading and permalink for Answer 2.1" aria-label="Copy heading and permalink for Answer 2.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-1-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-1-1-2-4-1">Each equation represents a line in the plane. Since the lines are not parallel, they intersect in exactly one point. That point satisfies both equations, so the system has exactly one solution.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 2.1"><a href="#exam-1-1-2-4" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 2"><a href="#exam-1-1-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-1-1-3"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2"><a href="#exam-1-1-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="exam-1-1-3"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-1-1-3-1-1">
 <div class="para">Consider the system</div>
 <div class="displaymath process-math" id="exam-1-1-3-1-1-1">
@@ -615,8 +596,7 @@ x - y \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha ol-marker-5" id="exam-1-1-3-1-2">
+</div> <ol class="lower-alpha ol-marker-5" id="exam-1-1-3-1-2">
 <li id="exam-1-1-3-1-2-1">
 <div class="para" id="exam-1-1-3-1-2-1-1">Does this system have a solution?<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -629,14 +609,11 @@ x - y \amp= 2
 </li>
 </ol>
 <div class="solutions">
-<details id="exam-1-1-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-1-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-1-3-2-1">Compare the two equations and think about their graphs.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 3.1"><a href="#exam-1-1-3-2" title="Copy heading and permalink for Hint 3.1" aria-label="Copy heading and permalink for Hint 3.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-3-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-1-3-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exam-1-1-3-3-1">
 <li id="exam-1-1-3-3-1-1">
 <div class="para" id="exam-1-1-3-3-1-1-1">No.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-3-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -650,9 +627,7 @@ x - y \amp= 2
 </li>
 </ol>
 <div class="autopermalink" data-description="Answer 3.1"><a href="#exam-1-1-3-3" title="Copy heading and permalink for Answer 3.1" aria-label="Copy heading and permalink for Answer 3.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-1-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exam-1-1-3-4-1">
 <li id="exam-1-1-3-4-1-1">
 <div class="para" id="exam-1-1-3-4-1-1-1">The system has no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-3-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -668,9 +643,7 @@ x - y \amp= 2
 <div class="autopermalink" data-description="Solution 3.1"><a href="#exam-1-1-3-4" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 3"><a href="#exam-1-1-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-1-1-4"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 3"><a href="#exam-1-1-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="exam-1-1-4"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-1-1-4-1-1">
 <div class="para">Consider the system</div>
 <div class="displaymath process-math" id="exam-1-1-4-1-1-1">
@@ -683,35 +656,26 @@ x - y \amp= 0 \\
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-1-1-4-1-2">How many solutions does this system have? Explain your reasoning.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-1-1-4-1-2">How many solutions does this system have? Explain your reasoning.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-1-1-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-1-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-1-4-2-1">Think about whether all three equations can be satisfied at the same time.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 4.1"><a href="#exam-1-1-4-2" title="Copy heading and permalink for Hint 4.1" aria-label="Copy heading and permalink for Hint 4.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-4-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-1-4-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-1-1-4-3-1">Exactly one solution.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 4.1"><a href="#exam-1-1-4-3" title="Copy heading and permalink for Answer 4.1" aria-label="Copy heading and permalink for Answer 4.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-4-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-1-4-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-1-1-4-4-1">The first two equations intersect at a single point. The third equation is also satisfied by that same point. Therefore, all three equations are satisfied by exactly one point.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 4.1"><a href="#exam-1-1-4-4" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 4"><a href="#exam-1-1-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-1-1-5"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 4"><a href="#exam-1-1-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="exam-1-1-5"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exam-1-1-5-1-1">Consider two linear equations in three unknowns.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="lower-alpha ol-marker-5" id="exam-1-1-5-1-2">
+</div> <ol class="lower-alpha ol-marker-5" id="exam-1-1-5-1-2">
 <li id="exam-1-1-5-1-2-1">
 <div class="para" id="exam-1-1-5-1-2-1-1">What does the solution set of a single linear equation in three unknowns look like geometrically?<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-5-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -724,14 +688,11 @@ x - y \amp= 0 \\
 </li>
 </ol>
 <div class="solutions">
-<details id="exam-1-1-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-1-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-1-5-2-1">Recall how lines generalize to higher dimensions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 5.1"><a href="#exam-1-1-5-2" title="Copy heading and permalink for Hint 5.1" aria-label="Copy heading and permalink for Hint 5.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-5-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-1-5-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exam-1-1-5-3-1">
 <li id="exam-1-1-5-3-1-1">
 <div class="para" id="exam-1-1-5-3-1-1-1">A plane.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-5-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -745,9 +706,7 @@ x - y \amp= 0 \\
 </li>
 </ol>
 <div class="autopermalink" data-description="Answer 5.1"><a href="#exam-1-1-5-3" title="Copy heading and permalink for Answer 5.1" aria-label="Copy heading and permalink for Answer 5.1">🔗</a></div>
-</div></details>
-<details id="exam-1-1-5-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-1-5-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <ol class="lower-alpha ol-marker-5" id="exam-1-1-5-4-1">
 <li id="exam-1-1-5-4-1-1">
 <div class="para" id="exam-1-1-5-4-1-1-1">A single linear equation in three unknowns represents a plane in three‑dimensional space.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-1-5-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -763,9 +722,7 @@ x - y \amp= 0 \\
 <div class="autopermalink" data-description="Solution 5.1"><a href="#exam-1-1-5-4" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 5"><a href="#exam-1-1-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-find-1"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 5"><a href="#exam-1-1-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="exam-find-1"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-find-1-1-1">
 <div class="para">Solve the system of equations</div>
 <div class="displaymath process-math" id="exam-find-1-1-1-1">
@@ -780,28 +737,21 @@ x - y \amp= 1
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-find-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-find-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-find-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-find-1-2-1">Try adding the two equations.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 6.1"><a href="#exam-find-1-2" title="Copy heading and permalink for Hint 6.1" aria-label="Copy heading and permalink for Hint 6.1">🔗</a></div>
-</div></details>
-<details id="exam-find-1-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-find-1-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-find-1-3-1">The solution is <span class="process-math">\((x,y) = (3,2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-find-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 6.1"><a href="#exam-find-1-3" title="Copy heading and permalink for Answer 6.1" aria-label="Copy heading and permalink for Answer 6.1">🔗</a></div>
-</div></details>
-<details id="exam-find-1-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-find-1-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-find-1-4-1">Adding the two equations gives <span class="process-math">\(2x = 6\text{,}\)</span> so <span class="process-math">\(x = 3\text{.}\)</span> Substituting into the first equation gives <span class="process-math">\(3 + y = 5\text{,}\)</span> so <span class="process-math">\(y = 2\text{.}\)</span> Thus the system has exactly one solution, <span class="process-math">\((3,2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-find-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 6.1"><a href="#exam-find-1-4" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 6"><a href="#exam-find-1" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-find-2"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 6"><a href="#exam-find-1" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="exam-find-2"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-find-2-1-1">
 <div class="para">Determine whether the following system is equivalent to</div>
 <div class="displaymath process-math" id="exam-find-2-1-1-1">
@@ -814,8 +764,7 @@ x + y \amp= 4 \\
 </div>
 <div class="para">Explain your reasoning.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-find-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para logical" id="exam-find-2-1-2">
+</div> <div class="para logical" id="exam-find-2-1-2">
 <div class="displaymath process-math" id="exam-find-2-1-2-1">
 \begin{equation*}
 \begin{aligned}
@@ -827,28 +776,21 @@ x + y \amp= 4
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-find-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-find-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-find-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-find-2-2-1">Think about whether the two systems have the same solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 7.1"><a href="#exam-find-2-2" title="Copy heading and permalink for Hint 7.1" aria-label="Copy heading and permalink for Hint 7.1">🔗</a></div>
-</div></details>
-<details id="exam-find-2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-find-2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-find-2-3-1">Yes, the systems are equivalent.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 7.1"><a href="#exam-find-2-3" title="Copy heading and permalink for Answer 7.1" aria-label="Copy heading and permalink for Answer 7.1">🔗</a></div>
-</div></details>
-<details id="exam-find-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-find-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-find-2-4-1">The second equation in the original system is just twice the first, so it does not impose a new condition. Both systems describe the same set of solutions: all points satisfying <span class="process-math">\(x + y = 4\text{.}\)</span> Therefore, the systems are equivalent.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 7.1"><a href="#exam-find-2-4" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 7"><a href="#exam-find-2" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-find-3"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 7"><a href="#exam-find-2" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="exam-find-3"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-find-3-1-1">
 <div class="para">Consider the system</div>
 <div class="displaymath process-math" id="exam-find-3-1-1-1">
@@ -860,24 +802,18 @@ x + y \amp= 5
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-find-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-find-3-1-2">Determine whether this system has a solution. If it does, find all solutions. If it does not, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-find-3-1-2">Determine whether this system has a solution. If it does, find all solutions. If it does not, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-find-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-find-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-find-3-2-1">Ask whether a single pair <span class="process-math">\((x,y)\)</span> can satisfy both equations at the same time.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 8.1"><a href="#exam-find-3-2" title="Copy heading and permalink for Hint 8.1" aria-label="Copy heading and permalink for Hint 8.1">🔗</a></div>
-</div></details>
-<details id="exam-find-3-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-find-3-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-find-3-3-1">The system has no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 8.1"><a href="#exam-find-3-3" title="Copy heading and permalink for Answer 8.1" aria-label="Copy heading and permalink for Answer 8.1">🔗</a></div>
-</div></details>
-<details id="exam-find-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-find-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-find-3-4-1">The first equation requires <span class="process-math">\(x + y = 2\text{,}\)</span> while the second requires <span class="process-math">\(x + y = 5\text{.}\)</span> There is no pair of numbers <span class="process-math">\((x,y)\)</span> for which both of these statements can be true simultaneously.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="exam-find-3-4-2">Therefore, the system is inconsistent and has no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -885,9 +821,7 @@ x + y \amp= 5
 <div class="autopermalink" data-description="Solution 8.1"><a href="#exam-find-3-4" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 8"><a href="#exam-find-3" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-find-4"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 8"><a href="#exam-find-3" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="exam-find-4"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-find-4-1-1">
 <div class="para">Solve the system</div>
 <div class="displaymath process-math" id="exam-find-4-1-1-1">
@@ -902,28 +836,21 @@ x + 2y \amp= 6 \\
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-find-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-find-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-find-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-find-4-2-1">Compare the second equation to the first.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 9.1"><a href="#exam-find-4-2" title="Copy heading and permalink for Hint 9.1" aria-label="Copy heading and permalink for Hint 9.1">🔗</a></div>
-</div></details>
-<details id="exam-find-4-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-find-4-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-find-4-3-1">The system has infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 9.1"><a href="#exam-find-4-3" title="Copy heading and permalink for Answer 9.1" aria-label="Copy heading and permalink for Answer 9.1">🔗</a></div>
-</div></details>
-<details id="exam-find-4-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-find-4-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-find-4-4-1">The second equation is obtained by multiplying the first by 2, so both equations describe the same line. Every solution of <span class="process-math">\(x + 2y = 6\)</span> satisfies both equations. Therefore, the system has infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 9.1"><a href="#exam-find-4-4" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 9"><a href="#exam-find-4" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-find-5"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 9"><a href="#exam-find-4" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="exam-find-5"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-find-5-1-1">
 <div class="para">Solve the system</div>
 <div class="displaymath process-math" id="exam-find-5-1-1-1">
@@ -938,20 +865,15 @@ x - y + z \amp= 2
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-find-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-find-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-find-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-find-5-2-1">Subtract the second equation from the first.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 10.1"><a href="#exam-find-5-2" title="Copy heading and permalink for Hint 10.1" aria-label="Copy heading and permalink for Hint 10.1">🔗</a></div>
-</div></details>
-<details id="exam-find-5-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-find-5-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-find-5-3-1">The solution set is a line in three‑dimensional space.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 10.1"><a href="#exam-find-5-3" title="Copy heading and permalink for Answer 10.1" aria-label="Copy heading and permalink for Answer 10.1">🔗</a></div>
-</div></details>
-<details id="exam-find-5-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-find-5-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-find-5-4-1">Subtracting the second equation from the first gives <span class="process-math">\(2y = 4\text{,}\)</span> so <span class="process-math">\(y = 2\text{.}\)</span> Substituting into the first equation gives <span class="process-math">\(x + z = 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-find-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="exam-find-5-4-2">Thus the solutions are all triples of the form <span class="process-math">\((x,2,4-x)\text{.}\)</span> Since there are infinitely many such triples, the solution set is a line.<div class="autopermalink" data-description="Paragraph"><a href="#exam-find-5-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -959,9 +881,7 @@ x - y + z \amp= 2
 <div class="autopermalink" data-description="Solution 10.1"><a href="#exam-find-5-4" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 10"><a href="#exam-find-5" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-1-2-A"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 10"><a href="#exam-find-5" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div></article><article class="exercise exercise-like" id="exam-1-2-A"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-1-2-A-1-1">
 <div class="para">The reduced augmented matrix of a linear system is</div>
 <div class="displaymath process-math" id="exam-1-2-A-1-1-1">
@@ -975,33 +895,25 @@ x - y + z \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-A-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-1-2-A-1-2">Find the solution to the system.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-A-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-1-2-A-1-2">Find the solution to the system.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-A-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-1-2-A-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-2-A-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-2-A-2-1">Interpret each row as an equation.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-A-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 11.1"><a href="#exam-1-2-A-2" title="Copy heading and permalink for Hint 11.1" aria-label="Copy heading and permalink for Hint 11.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-A-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-2-A-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-1-2-A-3-1">
 <span class="process-math">\((x,y) = (3,-2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-A-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 11.1"><a href="#exam-1-2-A-3" title="Copy heading and permalink for Answer 11.1" aria-label="Copy heading and permalink for Answer 11.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-A-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-2-A-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-1-2-A-4-1">The first row corresponds to <span class="process-math">\(x = 3\text{,}\)</span> and the second row corresponds to <span class="process-math">\(y = -2\text{.}\)</span> Therefore, the unique solution is <span class="process-math">\((3,-2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-A-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 11.1"><a href="#exam-1-2-A-4" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 11"><a href="#exam-1-2-A" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-1-2-B"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 11"><a href="#exam-1-2-A" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div></article><article class="exercise exercise-like" id="exam-1-2-B"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-1-2-B-1-1">
 <div class="para">Consider the augmented matrix</div>
 <div class="displaymath process-math" id="exam-1-2-B-1-1-1">
@@ -1015,32 +927,24 @@ x - y + z \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-B-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-1-2-B-1-2">Does the corresponding system have a solution? Explain your answer.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-B-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-1-2-B-1-2">Does the corresponding system have a solution? Explain your answer.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-B-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-1-2-B-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-2-B-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-2-B-2-1">What equation does the second row represent?<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-B-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 12.1"><a href="#exam-1-2-B-2" title="Copy heading and permalink for Hint 12.1" aria-label="Copy heading and permalink for Hint 12.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-B-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-2-B-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-1-2-B-3-1">The system has no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-B-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 12.1"><a href="#exam-1-2-B-3" title="Copy heading and permalink for Answer 12.1" aria-label="Copy heading and permalink for Answer 12.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-B-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-2-B-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-1-2-B-4-1">The second row represents the equation <span class="process-math">\(0 = 1\text{,}\)</span> which is impossible. Therefore, the system is inconsistent and has no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-B-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 12.1"><a href="#exam-1-2-B-4" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 12"><a href="#exam-1-2-B" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-1-2-C"><h5 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 12"><a href="#exam-1-2-B" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div></article><article class="exercise exercise-like" id="exam-1-2-C"><h5 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-1-2-C-1-1">
 <div class="para">The augmented matrix of a linear system is</div>
 <div class="displaymath process-math" id="exam-1-2-C-1-1-1">
@@ -1054,24 +958,18 @@ x - y + z \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-C-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-1-2-C-1-2">Describe the solution set.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-C-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-1-2-C-1-2">Describe the solution set.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-C-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-1-2-C-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-2-C-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-2-C-2-1">Identify any free variables.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-C-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 13.1"><a href="#exam-1-2-C-2" title="Copy heading and permalink for Hint 13.1" aria-label="Copy heading and permalink for Hint 13.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-C-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-2-C-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-1-2-C-3-1">The system has infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-C-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 13.1"><a href="#exam-1-2-C-3" title="Copy heading and permalink for Answer 13.1" aria-label="Copy heading and permalink for Answer 13.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-C-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-2-C-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-1-2-C-4-1">The first row represents <span class="process-math">\(x - y = 2\text{,}\)</span> and the second row imposes no additional condition. Solving for <span class="process-math">\(x\)</span> gives <span class="process-math">\(x = y + 2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-C-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="exam-1-2-C-4-2">Since <span class="process-math">\(y\)</span> is free, there are infinitely many solutions of the form <span class="process-math">\((y+2,y)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-C-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1079,9 +977,7 @@ x - y + z \amp= 2
 <div class="autopermalink" data-description="Solution 13.1"><a href="#exam-1-2-C-4" title="Copy heading and permalink for Solution 13.1" aria-label="Copy heading and permalink for Solution 13.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 13"><a href="#exam-1-2-C" title="Copy heading and permalink for Exercise 13" aria-label="Copy heading and permalink for Exercise 13">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-1-2-D"><h5 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 13"><a href="#exam-1-2-C" title="Copy heading and permalink for Exercise 13" aria-label="Copy heading and permalink for Exercise 13">🔗</a></div></article><article class="exercise exercise-like" id="exam-1-2-D"><h5 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-1-2-D-1-1">
 <div class="para">Start with the augmented matrix</div>
 <div class="displaymath process-math" id="exam-1-2-D-1-1-1">
@@ -1095,25 +991,19 @@ x - y + z \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-D-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-1-2-D-1-2">Replace the second row with the result of subtracting twice the first row from it. Then find the solution to the system.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-D-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-1-2-D-1-2">Replace the second row with the result of subtracting twice the first row from it. Then find the solution to the system.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-D-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-1-2-D-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-2-D-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-2-D-2-1">Compute <span class="process-math">\(R_2 - 2R_1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-D-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 14.1"><a href="#exam-1-2-D-2" title="Copy heading and permalink for Hint 14.1" aria-label="Copy heading and permalink for Hint 14.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-D-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-2-D-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-1-2-D-3-1">
 <span class="process-math">\((x,y) = (2,3)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-D-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 14.1"><a href="#exam-1-2-D-3" title="Copy heading and permalink for Answer 14.1" aria-label="Copy heading and permalink for Answer 14.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-D-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-2-D-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="exam-1-2-D-4-1">
 <div class="para">Subtracting twice the first row from the second gives</div>
 <div class="displaymath process-math" id="exam-1-2-D-4-1-1">
@@ -1133,9 +1023,7 @@ x - y + z \amp= 2
 <div class="autopermalink" data-description="Solution 14.1"><a href="#exam-1-2-D-4" title="Copy heading and permalink for Solution 14.1" aria-label="Copy heading and permalink for Solution 14.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 14"><a href="#exam-1-2-D" title="Copy heading and permalink for Exercise 14" aria-label="Copy heading and permalink for Exercise 14">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-1-2-E"><h5 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 14"><a href="#exam-1-2-D" title="Copy heading and permalink for Exercise 14" aria-label="Copy heading and permalink for Exercise 14">🔗</a></div></article><article class="exercise exercise-like" id="exam-1-2-E"><h5 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-1-2-E-1-1">
 <div class="para">The reduced augmented matrix of a system in three variables is</div>
 <div class="displaymath process-math" id="exam-1-2-E-1-1-1">
@@ -1149,24 +1037,18 @@ x - y + z \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-E-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-1-2-E-1-2">Describe the solution set geometrically.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-E-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-1-2-E-1-2">Describe the solution set geometrically.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-E-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-1-2-E-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-1-2-E-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-1-2-E-2-1">Count the number of free variables.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-E-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 15.1"><a href="#exam-1-2-E-2" title="Copy heading and permalink for Hint 15.1" aria-label="Copy heading and permalink for Hint 15.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-E-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-1-2-E-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-1-2-E-3-1">The solution set is a line in three‑dimensional space.<div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-E-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 15.1"><a href="#exam-1-2-E-3" title="Copy heading and permalink for Answer 15.1" aria-label="Copy heading and permalink for Answer 15.1">🔗</a></div>
-</div></details>
-<details id="exam-1-2-E-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-1-2-E-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-1-2-E-4-1">The matrix corresponds to the equations <span class="process-math">\(x + 2z = 1\)</span> and <span class="process-math">\(y - z = 3\text{.}\)</span> Solving gives <span class="process-math">\(x = 1 - 2z\)</span> and <span class="process-math">\(y = 3 + z\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-E-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="exam-1-2-E-4-2">Since <span class="process-math">\(z\)</span> is free, the solutions form a line in <span class="process-math">\(\mathbb{R}^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-1-2-E-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1174,9 +1056,7 @@ x - y + z \amp= 2
 <div class="autopermalink" data-description="Solution 15.1"><a href="#exam-1-2-E-4" title="Copy heading and permalink for Solution 15.1" aria-label="Copy heading and permalink for Solution 15.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 15"><a href="#exam-1-2-E" title="Copy heading and permalink for Exercise 15" aria-label="Copy heading and permalink for Exercise 15">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-pivot-1"><h5 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 15"><a href="#exam-1-2-E" title="Copy heading and permalink for Exercise 15" aria-label="Copy heading and permalink for Exercise 15">🔗</a></div></article><article class="exercise exercise-like" id="exam-pivot-1"><h5 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-pivot-1-1-1">
 <div class="para">The reduced row echelon form of an augmented matrix is</div>
 <div class="displaymath process-math" id="exam-pivot-1-1-1-1">
@@ -1191,32 +1071,24 @@ x - y + z \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-pivot-1-1-2">Identify the pivot positions and determine which variables are free.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-pivot-1-1-2">Identify the pivot positions and determine which variables are free.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-pivot-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-pivot-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-pivot-1-2-1">Pivot positions correspond to leading 1s in the matrix.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 16.1"><a href="#exam-pivot-1-2" title="Copy heading and permalink for Hint 16.1" aria-label="Copy heading and permalink for Hint 16.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-1-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-pivot-1-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-pivot-1-3-1">The pivot positions are in columns 1 and 2, and the third variable is free.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 16.1"><a href="#exam-pivot-1-3" title="Copy heading and permalink for Answer 16.1" aria-label="Copy heading and permalink for Answer 16.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-1-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-pivot-1-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-pivot-1-4-1">The leading 1s occur in the first and second columns, so those columns contain pivot positions. The third column does not contain a pivot, so the corresponding variable is free.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 16.1"><a href="#exam-pivot-1-4" title="Copy heading and permalink for Solution 16.1" aria-label="Copy heading and permalink for Solution 16.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 16"><a href="#exam-pivot-1" title="Copy heading and permalink for Exercise 16" aria-label="Copy heading and permalink for Exercise 16">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-pivot-2"><h5 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 16"><a href="#exam-pivot-1" title="Copy heading and permalink for Exercise 16" aria-label="Copy heading and permalink for Exercise 16">🔗</a></div></article><article class="exercise exercise-like" id="exam-pivot-2"><h5 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-pivot-2-1-1">
 <div class="para">Consider the augmented matrix</div>
 <div class="displaymath process-math" id="exam-pivot-2-1-1-1">
@@ -1230,32 +1102,24 @@ x - y + z \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-pivot-2-1-2">Is the corresponding linear system consistent? Explain your answer.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-pivot-2-1-2">Is the corresponding linear system consistent? Explain your answer.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-pivot-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-pivot-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-pivot-2-2-1">Look for a pivot in the last column.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 17.1"><a href="#exam-pivot-2-2" title="Copy heading and permalink for Hint 17.1" aria-label="Copy heading and permalink for Hint 17.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-pivot-2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-pivot-2-3-1">The system is inconsistent.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 17.1"><a href="#exam-pivot-2-3" title="Copy heading and permalink for Answer 17.1" aria-label="Copy heading and permalink for Answer 17.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-pivot-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-pivot-2-4-1">The second row corresponds to the equation <span class="process-math">\(0 = 1\text{,}\)</span> which is impossible. This occurs because there is a pivot in the last column. Therefore, the system is inconsistent and has no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 17.1"><a href="#exam-pivot-2-4" title="Copy heading and permalink for Solution 17.1" aria-label="Copy heading and permalink for Solution 17.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 17"><a href="#exam-pivot-2" title="Copy heading and permalink for Exercise 17" aria-label="Copy heading and permalink for Exercise 17">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-pivot-3"><h5 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 17"><a href="#exam-pivot-2" title="Copy heading and permalink for Exercise 17" aria-label="Copy heading and permalink for Exercise 17">🔗</a></div></article><article class="exercise exercise-like" id="exam-pivot-3"><h5 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para logical" id="exam-pivot-3-1-1">
 <div class="para">The row echelon form of a system is</div>
 <div class="displaymath process-math" id="exam-pivot-3-1-1-1">
@@ -1269,86 +1133,61 @@ x - y + z \amp= 2
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-pivot-3-1-2">Does the system have infinitely many solutions? If so, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-pivot-3-1-2">Does the system have infinitely many solutions? If so, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-pivot-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-pivot-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-pivot-3-2-1">Determine whether every variable corresponds to a pivot column.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 18.1"><a href="#exam-pivot-3-2" title="Copy heading and permalink for Hint 18.1" aria-label="Copy heading and permalink for Hint 18.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-3-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-pivot-3-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-pivot-3-3-1">Yes, the system has infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 18.1"><a href="#exam-pivot-3-3" title="Copy heading and permalink for Answer 18.1" aria-label="Copy heading and permalink for Answer 18.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-pivot-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-pivot-3-4-1">There are three variables but only two pivot columns. Since at least one variable is free, the system has infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 18.1"><a href="#exam-pivot-3-4" title="Copy heading and permalink for Solution 18.1" aria-label="Copy heading and permalink for Solution 18.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 18"><a href="#exam-pivot-3" title="Copy heading and permalink for Exercise 18" aria-label="Copy heading and permalink for Exercise 18">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-pivot-4"><h5 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 18"><a href="#exam-pivot-3" title="Copy heading and permalink for Exercise 18" aria-label="Copy heading and permalink for Exercise 18">🔗</a></div></article><article class="exercise exercise-like" id="exam-pivot-4"><h5 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exam-pivot-4-1-1">A system of linear equations in three variables has a reduced row echelon form with exactly two pivot positions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="exam-pivot-4-1-2">Describe the solution set geometrically.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-pivot-4-1-2">Describe the solution set geometrically.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-pivot-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-pivot-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-pivot-4-2-1">Think about how many free variables there are.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 19.1"><a href="#exam-pivot-4-2" title="Copy heading and permalink for Hint 19.1" aria-label="Copy heading and permalink for Hint 19.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-4-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-pivot-4-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-pivot-4-3-1">The solution set is a line in three‑dimensional space.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 19.1"><a href="#exam-pivot-4-3" title="Copy heading and permalink for Answer 19.1" aria-label="Copy heading and permalink for Answer 19.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-4-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-pivot-4-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-pivot-4-4-1">With three variables and two pivot positions, there is one free variable. Therefore, the solution set depends on one parameter and forms a line in <span class="process-math">\(\mathbb{R}^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 19.1"><a href="#exam-pivot-4-4" title="Copy heading and permalink for Solution 19.1" aria-label="Copy heading and permalink for Solution 19.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 19"><a href="#exam-pivot-4" title="Copy heading and permalink for Exercise 19" aria-label="Copy heading and permalink for Exercise 19">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="exam-pivot-5"><h5 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 19"><a href="#exam-pivot-4" title="Copy heading and permalink for Exercise 19" aria-label="Copy heading and permalink for Exercise 19">🔗</a></div></article><article class="exercise exercise-like" id="exam-pivot-5"><h5 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
 <div class="para" id="exam-pivot-5-1-1">Explain why the number of pivot positions in the reduced row echelon form of an augmented matrix determines whether a system has no solutions, exactly one solution, or infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exam-pivot-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="hint solution-like knowl__content">
+<details id="exam-pivot-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para" id="exam-pivot-5-2-1">Consider the roles of pivots in the coefficient columns and the last column.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 20.1"><a href="#exam-pivot-5-2" title="Copy heading and permalink for Hint 20.1" aria-label="Copy heading and permalink for Hint 20.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-5-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="answer solution-like knowl__content">
+</div></details><details id="exam-pivot-5-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="exam-pivot-5-3-1">Pivot positions determine consistency and the number of free variables.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 20.1"><a href="#exam-pivot-5-3" title="Copy heading and permalink for Answer 20.1" aria-label="Copy heading and permalink for Answer 20.1">🔗</a></div>
-</div></details>
-<details id="exam-pivot-5-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
+</div></details><details id="exam-pivot-5-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="exam-pivot-5-4-1">If there is a pivot in the last column, the system is inconsistent and has no solutions. If every variable column has a pivot, there are no free variables and the system has exactly one solution. If there are fewer pivot positions than variables and no pivot in the last column, there are free variables and infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-pivot-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 20.1"><a href="#exam-pivot-5-4" title="Copy heading and permalink for Solution 20.1" aria-label="Copy heading and permalink for Solution 20.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Exercise 20"><a href="#exam-pivot-5" title="Copy heading and permalink for Exercise 20" aria-label="Copy heading and permalink for Exercise 20">🔗</a></div>
-</article><div class="autopermalink" data-description="Exercises: Questions"><a href="#exercises-practiceexam1" title="Copy heading and permalink for Exercises: Questions" aria-label="Copy heading and permalink for Exercises: Questions">🔗</a></div>
-</section><div class="autopermalink" data-description="Section: Topics"><a href="#ch-practice-exams-2-2" title="Copy heading and permalink for Section: Topics" aria-label="Copy heading and permalink for Section: Topics">🔗</a></div>
-</section><div class="autopermalink" data-description="Handout: Chapter 1 Practice Exam"><a href="#ch-practice-exams-2" title="Copy heading and permalink for Handout: Chapter 1 Practice Exam" aria-label="Copy heading and permalink for Handout: Chapter 1 Practice Exam">🔗</a></div>
-</section>
+<div class="autopermalink" data-description="Exercise 20"><a href="#exam-pivot-5" title="Copy heading and permalink for Exercise 20" aria-label="Copy heading and permalink for Exercise 20">🔗</a></div></article><div class="autopermalink" data-description="Exercises: Questions"><a href="#exercises-practiceexam1" title="Copy heading and permalink for Exercises: Questions" aria-label="Copy heading and permalink for Exercises: Questions">🔗</a></div></section><div class="autopermalink" data-description="Section: Topics"><a href="#ch-practice-exams-2-2" title="Copy heading and permalink for Section: Topics" aria-label="Copy heading and permalink for Section: Topics">🔗</a></div></section><div class="autopermalink" data-description="Handout: Chapter 1 Practice Exam"><a href="#ch-practice-exams-2" title="Copy heading and permalink for Handout: Chapter 1 Practice Exam" aria-label="Copy heading and permalink for Handout: Chapter 1 Practice Exam">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-practice-exams.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-practice-exams-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
