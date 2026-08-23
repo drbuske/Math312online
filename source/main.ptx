@@ -6,9 +6,9 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Linear Algebra</title>
+    <title>MATH 312</title>
 
-    <subtitle>MATH 312</subtitle> 
+    <subtitle>Linear Algebra (Accelerated)</subtitle> 
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />

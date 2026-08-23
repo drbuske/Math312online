@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <chapter xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude"> -->
-  <title>Detailed Syllabus</title>
+  <title>Syllabus</title>
 
   <!-- Include chapters -->
-  <section xml:id="sec-course-info">
-    <title>Course Information</title>
+  <paragraphs xml:id="sec-course-info">
+    <title>Course Information</title> 
 
     <p>
-      This is a more detailed syllabus for the accelerated, online version of <term>Linear Algebra (MATH 312)</term>, a 4-credit course offered through St. Cloud State University.
+      <!-- This is a more detailed syllabus for the accelerated, online version of <term>Linear Algebra (MATH 312)</term>, a 4-credit course offered through St. Cloud State University. -->
       <!-- use a description list (dl) for short items -->
       <dl>
         <li>
@@ -154,23 +154,26 @@
 
           <p>Enrollment key: <term>Buske312F26</term></p>
         </li>
-      </dl>
-    </p>
 
-  <!-- Use paragraphs to break apart subsections -->
-    <paragraphs>
+         <li>
       <title>Course Overview</title>
 
       <p>
         People learn mathematics by <em>doing</em> mathematics.  Though the course is asynchronous and hence flexible, you would be well-advised to <em>do</em> mathematics each day.  The course calendar has dates for each topic.  Each section of the text contains videos, readings, core activities, and exercises to prepare you for each graded assessment.  Procrastination will not serve you well.  A number of tools are available to support you, but the most important tool will be your dedicated effort.  
       </p>
-    </paragraphs>
-  </section>
+    </li>
+
+      </dl>
+    </p>
+
+  <!-- Use paragraphs to break apart subsections -->
+   
+  </paragraphs>
 
 
 
-  <section>
-    <title>Topics and Learning Outcomes</title>
+  <paragraphs>
+    <title>Topics and Learning Outcomes</title> -->
     <p>
       <dl>
         <li>
@@ -217,12 +220,12 @@
         </li>
       </dl>
     </p>
-  </section>
+   </paragraphs>
   
-  <section xml:id="subsec-calendar">
-    <title>Calendar</title>
+  <paragraphs xml:id="subsec-calendar">
+    <title>Calendar</title> 
     <p>
-      Below is a calendar with dates that you should study each topic and dates to take the written exams.  Depending on your schedule, you may wish to do some of the work on weekends.  Just be sure to not fall behind and be prepared for assessments on the prescribed dates.  
+      <xref ref="schedule-table"/> is a calendar with dates that you should study each topic and dates to take the written exams.  Depending on your schedule, you may wish to do some of the work on weekends.  Just be sure to not fall behind and be prepared for assessments on the prescribed dates.  
     </p>
 
 <table xml:id="schedule-table">
@@ -302,11 +305,11 @@
 </table>
 
     <p>
-      Exams will take place during a time period from Friday at 6 PM until Sunday at 11:59 PM at the end of each week of the course.  They will cover the following material from the course.
+      Exams will take place during a time period from Friday at 6 PM until Sunday at 11:59 PM at the end of each week of the course.  They will cover the material from the course given in <xref ref="ExamDates"/>.
     </p>
 
     <table xml:id="ExamDates" >
-<title>Exam dates and topics</title>
+<title>Exam topics</title>
 <tabular halign="center" bottom="minor" top="minor">
 <row header="no" bottom="medium" top="medium">
 <cell> <alert>Exam</alert> </cell>
@@ -399,10 +402,9 @@ This course is accelerated!  That means it moves at more than double the pace of
 </tabular>
 </table>
 
-  </section> 
+ </paragraphs> 
 
-  <!-- Other subsections for larger dividers -->
-  <section xml:id="sec-assessments">
+  <paragraphs xml:id="sec-assessments">
     <title>Assessments and Grades</title>
 
     <p>
@@ -412,7 +414,7 @@ This course is accelerated!  That means it moves at more than double the pace of
       <li>
         <title>Written Homework</title>
         <p>
-          There will be 13 written homework assignments.  Directions for these, the grading rubric, and the specific exercises to address can be found under the <alert>Written Homework</alert> section of this website.  Remember that <em>doing</em> mathematics is the best, and perhaps <em>only</em> way to learn mathematics!  
+          There will be 13 written homework assignments.  Directions for these, the grading rubric, and the specific exercises to address can be found under the <alert>Written Homework</alert> section at <url href="https://drbuske.github.io/Math312online/course/writtenhomework312.html">https://drbuske.github.io/Math312online/course/writtenhomework312.html</url>.  Remember that <em>doing</em> mathematics is the best, and perhaps <em>only</em> way to learn mathematics!  
         </p>
 
         <p>A syllabus quiz will be taken during the first week.  These points will count towards written homework.
@@ -507,6 +509,6 @@ This course is accelerated!  That means it moves at more than double the pace of
 </dl>
     </p>
 
-  </section>
+  </paragraphs> 
 
 </chapter>
