@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <chapter xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude"> -->
-  <title>Syllabus</title>
+  <title>Detailed Syllabus</title>
 
   <!-- Include chapters -->
   <section xml:id="sec-course-info">
     <title>Course Information</title>
 
     <p>
-      This is the syllabus for <term>Linear Algebra (MATH 312)</term> for Summer 2026.
-      It is a 4-credit course offered through St. Cloud State University.
+      This is a more detailed syllabus for the accelerated, online version of <term>Linear Algebra (MATH 312)</term>, a 4-credit course offered through St. Cloud State University.
       <!-- use a description list (dl) for short items -->
       <dl>
         <li>
@@ -38,7 +37,7 @@
           <title>Class Meetings</title>
 
           <p>
-            The course is asynchronous; however, closely following the suggested schedule is strongly advised in order to be successful and prepared for assessments of your learning.   
+            The course is asynchronous. Following the online schedule is critical your success.   
           </p>
 
           <!-- <table xml:id="MeetingDates" >
@@ -140,11 +139,11 @@
           </p>
 
           <p>
-            Course materials beyond the textbook can be found at <url href="https://drbuske.github.io/Math312/frontmatter.html">https://drbuske.github.io/Math312</url>.  There you will find items such as the course syllabus, answers to activities from the textbook, and practice exams.  
+            Course materials beyond the textbook can be found at <url href="https://drbuske.github.io/Math312online/frontmatter.html">https://drbuske.github.io/Math312online</url>.  There you will find items such as answers to activities from the textbook and practice exam questions.  
           </p>
             
           <p>
-            <term>D2L Brightspace</term> will be the learning management tool used to organize the course.  Grades, a calendar, assignments, and exams as well as announcements we be posted on D2L.  Visit <url href="http://myhuskynet.stcloudstate.edu" visual="http://myhuskynet.stcloudstate.edu"/> and login to your account using your Huskynet ID and password.  
+            <term>D2L Brightspace</term> will be the learning management tool used to organize the course.  Grades, a calendar, assignments, and exams as well as announcements we be managed within D2L.  Visit <url href="http://myhuskynet.stcloudstate.edu" visual="http://myhuskynet.stcloudstate.edu"/> and login to your account using your Huskynet ID and password.  
           </p>
 
           <p>
@@ -153,7 +152,7 @@
 
           <p>Course ID: <term>323855</term></p>
 
-          <p>Enrollment key: <term>Buske312Su26</term></p>
+          <p>Enrollment key: <term>Buske312onlineF26</term></p>
         </li>
       </dl>
     </p>
@@ -195,6 +194,9 @@
 
           <p> Orthogonality and Least Squares: The dot product; Orthogonal complements and the matrix transpose; Orthogonal bases and projections; Finding orthogonal bases; Orthogonal least squares.
           </p>
+
+          <p>Orthogonal Diagonalization: Symmetric matrices and variance
+          </p>
         </li>
 
         <li>
@@ -227,74 +229,72 @@
   <title>Course Schedule</title>
 <tabular halign="center" bottom="minor" top="minor">
 <row header="no" bottom="medium" top="medium">
-      <cell><alert>Week Starting</alert></cell>
-      <cell><alert>Monday</alert></cell>
-      <cell><alert>Tuesday</alert></cell>
-      <cell><alert>Wednesday</alert></cell>
-      <cell><alert>Thursday</alert></cell>
-      <cell><alert>Friday</alert></cell>
+      <cell><alert>Week</alert></cell>
+      <cell><alert>Sun/Mon</alert></cell>
+      <!-- <cell><alert>Monday</alert></cell> -->
+      <cell><alert>Tue/Wed</alert></cell>
+      <!-- <cell><alert>Wednesday</alert></cell> -->
+      <cell><alert>Thu/Fri</alert></cell>
+      <cell><alert>Saturday</alert></cell>
     </row>
 
     <row>
-      <cell><alert>5/11</alert></cell>
-      <cell>1.1 What can we expect</cell>
-      <cell>1.2 Finding solutions to linear systems</cell>
+      <cell><alert>1</alert></cell>
+      <cell><line> 1.1 What can we expect; </line> <line>1.2 Finding solutions to linear systems</line></cell>
+      <!-- <cell>1.2 Finding solutions to linear systems</cell> -->
       <cell>1.3 Computation with Sage</cell>
       <cell>1.4 Pivots and their influence on solution spaces</cell>
       <cell><alert>Review &amp; Exam 1</alert></cell>
     </row>
 
     <row>
-      <cell><alert>5/18</alert></cell>
-      <cell>2.1 Vectors and linear combinations</cell>
-      <cell>2.2 Matrix multiplication and linear combinations</cell>
-      <cell>2.3 The span of a set of vectors</cell>
-      <cell>2.4 Linear independence</cell>
-      <cell>2.5 Matrix transformations</cell>
+      <cell><alert>2</alert></cell>
+      <cell><line>2.1 Vectors and linear combinations;</line><line>2.2 Matrix multiplication and linear combinations</line></cell>
+      <!-- <cell></cell> -->
+      <cell><line>2.3 The span of a set of vectors;</line><line>2.4 Linear independence </line></cell>
+      <!-- <cell></cell> -->
+      <cell><line>2.5 Matrix transformations;</line><line>2.6 The geometry of matrix transformations </line></cell>
+      <cell><alert>Review &amp; Exam 2</alert></cell>
     </row>
 
     <row>
-      <cell><alert>5/25</alert></cell>
-      <cell><em>No Class</em></cell>
-      <cell>2.6 The geometry of matrix transformations</cell>
-      <cell><alert>Review &amp; Exam 2</alert></cell>
+      <cell><alert>3</alert></cell>
       <cell>3.1 Invertibility</cell>
       <cell>3.2 Bases and coordinate systems</cell>
+      <cell><line>3.3 Determinants;</line><line>3.4 Subspaces</line></cell>
+      <cell><alert>Review &amp; Exam 3</alert></cell>
     </row>
 
     <row>
-      <cell><alert>6/1</alert></cell>
-      <cell>3.3 Determinants</cell>
-      <cell>3.4 Subspaces</cell>
-      <cell><alert>Review &amp; Exam 3</alert></cell>
+      <cell><alert>4</alert></cell>
       <cell>4.1 An introduction to eigenvalues and eigenvectors</cell>
       <cell>4.2 Finding eigenvalues and eigenvectors</cell>
-    </row>
-
-    <row>
-      <cell><alert>6/8</alert></cell>
       <cell>4.3 Diagonalization, similarity, and powers of a matrix</cell>
       <cell><alert>Review &amp; Exam 4</alert></cell>
-      <cell>5.1 Definition of vector spaces</cell>
-      <cell>5.2 Linear combinations, span, and independence</cell>
-      <cell>5.3 Vector subspaces</cell>
     </row>
 
     <row>
-      <cell><alert>6/15</alert></cell>
+      <cell><alert>5</alert></cell>
+      <cell>5.1 Definition of vector spaces</cell>
+      <cell><line>5.2 Linear combinations, span, and independence;</line><line>5.3 Vector subspaces</line></cell>
       <cell>5.4 Basis and dimension</cell>
       <cell><alert>Review &amp; Exam 5</alert></cell>
-      <cell>6.1 The dot product</cell>
-      <cell>6.2 Orthogonal complements and the matrix transpose</cell>
-      <cell><em>No class</em></cell>
     </row>
 
     <row>
-      <cell><alert>6/22</alert></cell>
+      <cell><alert>6</alert></cell>
+      <cell>6.1 The dot product</cell>
+      <cell>6.2 Orthogonal complements and the matrix transpose</cell>
       <cell>6.3 Orthogonal bases and projections</cell>
+      <cell><alert>Review &amp; Exam 6</alert></cell>
+    </row>
+
+    <row>
+      <cell><alert>7</alert></cell>
+      
       <cell>6.4 Finding orthogonal bases</cell>
       <cell>6.5 Orthogonal least squares</cell>
-      <cell><alert>Review &amp; Exam 6</alert></cell>
+      <cell>7.1 Symmetric matrices and variance</cell>
       <cell><alert>Review &amp; Final Exam</alert></cell>
     </row>
 
@@ -302,7 +302,7 @@
 </table>
 
     <p>
-      Exams will cover the following material from the course.
+      Exams will take place during a time period from Friday at 6 PM until Sunday at 11:59 PM at the end of each week of the course.  They will cover the following material from the course.
     </p>
 
     <table xml:id="ExamDates" >
@@ -310,49 +310,49 @@
 <tabular halign="center" bottom="minor" top="minor">
 <row header="no" bottom="medium" top="medium">
 <cell> <alert>Exam</alert> </cell>
-<cell> <alert>Date</alert> </cell>
+<!-- <cell> <alert>Date</alert> </cell> -->
 <cell> <alert>Topics</alert> </cell>
 </row>
 
 <row>
 <cell> Exam 1 </cell> 
-<cell> May 15 </cell> 
+<!-- <cell> May 15 </cell> -->
 <cell> Sections 1.1-1.4 </cell>     
 </row>
 
 <row>
 <cell> Exam 2 </cell> 
-<cell> May 27 </cell>  
+<!-- <cell> May 27 </cell>  -->
 <cell> Sections 2.1-2.6 </cell>  
 </row>
 
 <row>
 <cell> Exam 3 </cell> 
-<cell> June 3 </cell> 
+<!-- <cell> June 3 </cell> -->
 <cell> Sections 3.1-3.4 </cell>  
 </row>
 
 <row>
 <cell> Exam 4 </cell> 
-<cell> June 9 </cell> 
+<!-- <cell> June 9 </cell> -->
 <cell> Sections 4.1-4.3 </cell>   
 </row>
 
 <row>
 <cell> Exam 5 </cell> 
-<cell> June 16 </cell> 
+<!-- <cell> June 16 </cell> -->
 <cell> Sections 5.1-5.4 </cell> 
 </row>
 
 <row>
 <cell> Exam 6 </cell> 
-<cell> June 25 </cell> 
-<cell> Sections 6.1-6.5 </cell> 
+<!-- <cell> June 25 </cell> -->
+<cell> Sections 6.1-6.3 </cell> 
 </row>
 
 <row>
 <cell> Final Exam </cell> 
-<cell> June 26 </cell> 
+<!-- <cell> June 26 </cell> -->
 <cell> All sections </cell> 
 </row>
 
@@ -415,7 +415,7 @@ This course is accelerated!  That means it moves at more than double the pace of
           There will be 13 written homework assignments.  Directions for these, the grading rubric, and the specific exercises to address can be found under the <alert>Written Homework</alert> section of this website.  Remember that <em>doing</em> mathematics is the best, and perhaps <em>only</em> way to learn mathematics!  
         </p>
 
-        <p>A syllabus quiz will be taking during the first week.  These points will count towards written homework.
+        <p>A syllabus quiz will be taken during the first week.  These points will count towards written homework.
         </p>
       </li>
 
@@ -428,7 +428,7 @@ This course is accelerated!  That means it moves at more than double the pace of
   </p> 
 
       <p>Course ID: <alert>323855</alert></p>
-      <p>Enrollment Key: <alert>Buske312Su26</alert></p>
+      <p>Enrollment Key: <alert>Buske312onlineF26</alert></p>
       </li>
 
       <li>
@@ -438,10 +438,10 @@ This course is accelerated!  That means it moves at more than double the pace of
         </p>
 
         <p>
-          <alert>Exam Proctoring:</alert> All exams in this course will be proctored (recorded via Respondus Monitor), with no exceptions. 
+          <alert>Exam Proctoring:</alert> All exams in this course will be proctored (recorded via Respondus Monitor inside of D2L Brightspace), with no exceptions. 
         </p>
 
-        <p> Dates for the exams are included on the provided schedule.  Exams (except the final exam) are time limited to 90 minutes, but may be taken during any 90-minute period of the scheduled day(s).  Students with possible schedule conflicts should contact me immediately to discuss other possible days at which a proctored exam could be taken. 
+        <p> Exams (except the final exam) are time limited to 90 minutes, but may be taken during any 90-minute period of the scheduled day(s).  Students with possible schedule conflicts should contact me immediately to discuss other possible days at which a proctored exam could be taken. 
         </p>         
 
         <p> Exams will open as a D2L quiz and all written work will be scanned and submitted to a separate D2L assignment dropbox after the exam has closed in D2L.  More information is provided in D2L Brightspace.
@@ -465,7 +465,7 @@ This course is accelerated!  That means it moves at more than double the pace of
         <p> Students that prefer not to install the Respondus software may have the option to make arrangements to take the exams in person instead, either in an SCSU classroom with me if you live near the St. Cloud area or at another educational institution that provides test proctoring services.  Students must indicate their intent to do so during the first week of class, and all arrangements for proctoring at other educational institutions must be finalized no later than the end of the second week of class.
         </p>
 
-        <p> Exams for this course will be closed-book and closed-notes, meaning that you may not use the textbook, any unauthorized notes or electronic devices, or any online resources while working on the exams nor may you discuss the exam problems with anyone.   All submitted work must be completed on your own without any unauthorized help.  Calculators will be allowed on exams; in fact, a scientific calculator will appear on the D2L screen during the exam.  
+        <p> Most, but not all, exams for this course will be closed-book and closed-notes, meaning that you may not use the textbook, any unauthorized notes or electronic devices, or any online resources while working on the exams nor may you discuss the exam problems with anyone.   All submitted work must be completed on your own without any unauthorized help.  Calculators will be allowed on exams; in fact, a scientific calculator will appear on the D2L screen during the exam.  
         </p>
 
         <p> Reminder: Submitting work from someone else, work generated by ChatGPT (or any other generative AI software), or work copied from other websites as your own would constitute a violation of the SCSU Academic Integrity policy, as would allowing another student to submit your work as their own.  Any such violation will be reported to the appropriate authority and will result in sanctions to the grades of all students involved as discussed in the SCSU Academic Integrity policy.
