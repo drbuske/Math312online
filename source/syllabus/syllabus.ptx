@@ -124,12 +124,12 @@
             <ul>
               <li>
                 <p>
-                  The textbook is interactive and accessible via a laptop, phone, or many other devices.  Computation via <term>Sage</term> can be done in the textbook itself.  Some assignments will require the use of Sage.
+                  The <url href="https://drbuske.github.io/linearalgebra/">textbook</url> is interactive and accessible via a laptop, phone, or many other devices.  Computation via <term>Sage</term> can be done in the textbook itself.  Some assignments will require the use of Sage.
                 </p>
               </li>
               <li>
                 <p>
-                  The textbook is also built for <term>active learning</term>.  The activities in the text are a primary focus of your learning.  If you have trouble answering questions in a given activity, know that solutions to these are found on the course website (link given below).  The reading in the textbook is brief - this is intentional.  The primary focus will be working through the activities to explore the content.  
+                  The <url href="https://drbuske.github.io/linearalgebra/">textbook</url> is also built for <term>active learning</term>.  The activities in the text are a primary focus of your learning.  If you have trouble answering questions in a given activity, know that solutions to these are found on the course website (link given below).  The reading in the textbook is brief - this is intentional.  The primary focus will be working through the activities to explore the content.  
                 </p>
               </li>
               <li>
@@ -141,15 +141,15 @@
           </p>
 
           <p>
-            Course materials beyond the textbook can be found at <url href="https://drbuske.github.io/Math312online/frontmatter.html">https://drbuske.github.io/Math312online</url>.  There you will find items such as answers to activities from the textbook and practice exam questions.  
+            <url href="https://drbuske.github.io/Math312online/frontmatter.html">Course materials beyond the textbook</url> can be found at <url href="https://drbuske.github.io/Math312online/frontmatter.html">https://drbuske.github.io/Math312online</url>.  There you will find items such as answers to activities from the textbook and practice exam questions.  
           </p>
             
           <p>
-            <term>D2L Brightspace</term> will be the learning management tool used to organize the course.  Grades, a calendar, assignments, and exams as well as announcements we be managed within D2L.  Visit <url href="http://myhuskynet.stcloudstate.edu" visual="http://myhuskynet.stcloudstate.edu"/> and login to your account using your Huskynet ID and password.  
+            <term>D2L Brightspace</term> will be the learning management tool used to organize the course.  Grades, a calendar, assignments, and exams as well as announcements we be managed within D2L.  Visit the <url href="https://myhuskynet.stcloudstate.edu">HuskyNet website</url> at <url href="https://myhuskynet.stcloudstate.edu" visual="https://myhuskynet.stcloudstate.edu"/> and login to your account using your Huskynet ID and password.  
           </p>
 
           <p>
-            Electronic homework will be done via the <url href="http://www.myopenmath.com" visual="MyOpenMath"/> platform located at <url href="http://www.myopenmath.com" visual="http://www.myopenmath.com"/>.  A free account can be attained by using any email address and choosing a password.  Please use your real name as grades need to be manually transferred to D2L.  
+            Electronic homework will be done via the <url href="https://www.myopenmath.com" visual="MyOpenMath"/> platform located at <url href="http://www.myopenmath.com" visual="https://www.myopenmath.com"/>.  A free account can be attained by using any email address and choosing a password.  Please use your real name as grades need to be manually transferred to D2L.  
           </p>
 
           <p>Course ID: <term>344960</term></p>
@@ -416,7 +416,7 @@ This course is accelerated!  That means it moves at more than double the pace of
       <li>
         <title>Written Homework</title>
         <p>
-          There will be 13 written homework assignments.  Directions for these, the grading rubric, and the specific exercises to address can be found under the <alert>Written Homework</alert> section at <url href="https://drbuske.github.io/Math312online/course/writtenhomework312.html">https://drbuske.github.io/Math312online/course/writtenhomework312.html</url>.  Remember that <em>doing</em> mathematics is the best, and perhaps <em>only</em> way to learn mathematics!  
+          There will be 13 written homework assignments.  Directions for these, the grading rubric, and the specific exercises to address can be found under the <url href="https://drbuske.github.io/Math312online/course/writtenhomework312.html">Written Homework</url> section at <url href="https://drbuske.github.io/Math312online/course/writtenhomework312.html">https://drbuske.github.io/Math312online/course/writtenhomework312.html</url>.  Remember that <em>doing</em> mathematics is the best, and perhaps <em>only</em> way to learn mathematics!  
         </p>
 
         <p>A syllabus quiz will be taken during the first week.  These points will count towards written homework.
@@ -428,7 +428,7 @@ This course is accelerated!  That means it moves at more than double the pace of
       MOMwork
     </title>
   
-  <p> Associated with the course is an open source (FREE) electronic homework system (MyOpenMath).  We will use this for MOMwork.  To access this, use the link <url href="https://www.myopenmath.com/" visual="https://www.myopenmath.com/"/>.
+  <p> Associated with the course is an open source (FREE) electronic homework system (<url href="https://www.myopenmath.com/">MyOpenMath</url>).  We will use this for MOMwork.  To access this, use the link <url href="https://www.myopenmath.com/" visual="https://www.myopenmath.com/"/>.
   </p> 
 
       <p>Course ID: <alert>344960</alert></p>
