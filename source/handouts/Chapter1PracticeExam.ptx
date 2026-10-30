@@ -457,14 +457,12 @@
   <statement>
     <p>
       The reduced augmented matrix of a linear system is
-      <me>
-        \left[
-        \begin{array}{cc\amp c}
+      <md>
+        \begin{bmatrix}
           1 \amp 0 \amp 3 \\
           0 \amp 1 \amp -2
-        \end{array}
-        \right].
-      </me>
+        \end{bmatrix}.
+      </md>
     </p>
     <p>
       Find the solution to the system.
@@ -495,14 +493,12 @@
   <statement>
     <p>
       Consider the augmented matrix
-      <me>
-        \left[
-        \begin{array}{cc\amp c}
+      <md>
+        \begin{bmatrix}
           1 \amp 2 \amp 4 \\
           0 \amp 0 \amp 1
-        \end{array}
-        \right].
-      </me>
+        \end{bmatrix}.
+      </md>
     </p>
     <p>
       Does the corresponding system have a solution? Explain your answer.
@@ -534,12 +530,10 @@
     <p>
       The augmented matrix of a linear system is
       <me>
-        \left[
-        \begin{array}{cc\amp c}
+        \begin{bmatrix}
           1 \amp -1 \amp 2 \\
           0 \amp 0 \amp 0
-        \end{array}
-        \right].
+        \end{bmatrix}.
       </me>
     </p>
     <p>
@@ -575,14 +569,12 @@
   <statement>
     <p>
       Start with the augmented matrix
-      <me>
-        \left[
-        \begin{array}{cc\amp c}
+      <md>
+        \begin{bmatrix}
           1 \amp 1 \amp 5 \\
           2 \amp 3 \amp 11
-        \end{array}
-        \right].
-      </me>
+        \end{bmatrix}.
+      </md>
     </p>
     <p>
       Replace the second row with the result of subtracting twice the first
@@ -605,14 +597,12 @@
   <solution>
     <p>
       Subtracting twice the first row from the second gives
-      <me>
-        \left[
-        \begin{array}{cc\amp c}
+      <md>
+        \begin{bmatrix}
           1 \amp 1 \amp 5 \\
           0 \amp 1 \amp 1
-        \end{array}
-        \right].
-      </me>
+        \end{bmatrix}.
+      </md>
     </p>
     <p>
       The second row gives <m>y = 1</m>. Substituting into the first equation
@@ -625,14 +615,12 @@
   <statement>
     <p>
       The reduced augmented matrix of a system in three variables is
-      <me>
-        \left[
-        \begin{array}{ccc\amp c}
+      <md>
+        \begin{bmatrix}
           1 \amp 0 \amp 2 \amp 1 \\
           0 \amp 1 \amp -1 \amp 3
-        \end{array}
-        \right].
-      </me>
+        \end{bmatrix}.
+      </md>
     </p>
     <p>
       Describe the solution set geometrically.
@@ -667,15 +655,13 @@
   <statement>
     <p>
       The reduced row echelon form of an augmented matrix is
-      <me>
-        \left[
-        \begin{array}{ccc\amp c}
+      <md>
+        \begin{bmatrix}
           1 \amp 0 \amp 2 \amp 3 \\
           0 \amp 1 \amp -1 \amp 0 \\
           0 \amp 0 \amp 0 \amp 0
-        \end{array}
-        \right].
-      </me>
+        \end{bmatrix}.
+      </md>
     </p>
     <p>
       Identify the pivot positions and determine which variables are free.
@@ -708,14 +694,12 @@
   <statement>
     <p>
       Consider the augmented matrix
-      <me>
-        \left[
-        \begin{array}{ccc\amp c}
+      <md>
+        \begin{bmatrix}
           1 \amp 2 \amp -1 \amp 4 \\
           0 \amp 0 \amp 0 \amp 1
-        \end{array}
-        \right].
-      </me>
+        \end{bmatrix}.
+      </md>
     </p>
     <p>
       Is the corresponding linear system consistent? Explain your answer.
@@ -747,14 +731,12 @@
   <statement>
     <p>
       The row echelon form of a system is
-      <me>
-        \left[
-        \begin{array}{ccc\amp c}
+      <md>
+        \begin{bmatrix}
           1 \amp -1 \amp 2 \amp 0 \\
           0 \amp 0 \amp 1 \amp 3
-        \end{array}
-        \right].
-      </me>
+        \end{bmatrix}.
+      </md>
     </p>
     <p>
       Does the system have infinitely many solutions? If so, explain why.
