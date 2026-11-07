@@ -48,7 +48,7 @@
     Determine whether the vector
     <me>
       \mathbf{b} =
-      \begin{bmatrix} 3 \\ 1 \\ 2 \end{bmatrix}
+      \begin{bmatrix} 4 \\ 1 \\ 2 \end{bmatrix}
     </me>
     is a linear combination of
     <me>
@@ -81,12 +81,12 @@
       +
       b\begin{bmatrix}2\\1\\0 \end{bmatrix}
       =
-      \begin{bmatrix}3\\1\\2 \end{bmatrix}.
+      \begin{bmatrix}4\\1\\2 \end{bmatrix}.
     </me>
     This gives the system
     <me>
       \begin{aligned}
-        a + 2b \amp = 3 \\
+        a + 2b \amp = 4 \\
         b \amp = 1 \\
         a \amp = 2.
       \end{aligned}
@@ -158,7 +158,7 @@
       \end{bmatrix}
       =
       \begin{bmatrix}
-        4 \\ 1 \\ 5
+        4 \\ 0 \\ 4
       \end{bmatrix}.
     </me>
     <ol>
@@ -195,7 +195,7 @@
       x_3
       \begin{bmatrix}1\\-1\\0\end{bmatrix}
       =
-      \begin{bmatrix}4\\1\\5\end{bmatrix}.
+      \begin{bmatrix}4\\0\\4\end{bmatrix}.
     </me>
     <p>
       Solving the system yields <m>x_1 = 1</m>, <m>x_2 = 1</m>, and <m>x_3 = 1</m>.
