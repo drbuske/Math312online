@@ -1,0 +1,272 @@
+<worksheet label="ws-act-7-1-2">
+   <title>Activity 7.1.2</title>
+    <activity>
+      <statement>
+	<p>
+	  Remember that the Sage command <c>A.right_eigenmatrix()</c>
+	  attempts to find a basis for <m>\real^m</m> consisting of
+	  eigenvectors of <m>A</m>.  In particular, the assignment
+	  <c>D, P = A.right_eigenmatrix()</c>
+	  provides a diagonal matrix <m>D</m>
+	  constructed from the eigenvalues of <m>A</m> with the columns
+	  of <m>P</m> containing the associated eigenvectors.
+        </p>
+	<sage>
+	  <input>
+	  </input>
+	</sage>
+        <p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		For each of the following matrices, determine whether
+		there is a basis for <m>\real^2</m> consisting of
+		eigenvectors of that matrix.  When there is such a
+		basis, form the matrices <m>P</m> and <m>D</m> and
+		verify that the matrix equals <m>PDP^{-1}</m>.
+		<ol marker="1.">
+		  <li>
+		    <p>
+		      <m>\begin{bmatrix}
+		      3 \amp -4 \\
+		      4 \amp 3
+		      \end{bmatrix}
+		      </m>.
+		    </p>
+		  </li>
+		  <li>
+		    <p>
+		      <m>\begin{bmatrix}
+		      1 \amp 1 \\
+		      -1 \amp 3
+		      \end{bmatrix}
+		      </m>.
+		    </p>
+		  </li>
+		  <li>
+		    <p>
+		      <m>\begin{bmatrix}
+		      1 \amp 0\\
+		      -1 \amp 2
+		      \end{bmatrix}
+		      </m>.
+		    </p>
+		  </li>
+		  <li>
+		    <p>
+		      <m>\begin{bmatrix}
+		      9 \amp 2 \\
+		      2 \amp 6
+		      \end{bmatrix}
+		      </m>.
+		    </p>
+		  </li>
+		</ol>
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		For which of these examples is it possible to form an
+		orthogonal basis for <m>\real^2</m> consisting of
+		eigenvectors?
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		For any such matrix <m>A</m>, find an orthonormal basis
+		of eigenvectors and explain why <m>A=QDQ^{-1}</m> where
+		<m>Q</m> is an orthogonal matrix.
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		Finally, explain why <m>A=QDQ^T</m> in this case.
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		When <m>A=QDQ^T</m>, what is the relationship between
+		<m>A</m> and <m>A^T</m>?
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </statement>
+      
+      <solution>
+	<p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		<ol marker="1.">
+		  <li>
+		    <p>
+		      The eigenvalues of this matrix are complex so
+		      there is no such basis.
+		    </p>
+		  </li>
+		  <li>
+		    <p>
+		      There is one eigenvalue <m>\lambda=2</m> with
+		      multiplicity two.  The associated eigenspace
+		      <m>E_2</m> is one-dimensional so there is not a
+		      basis of <m>\real^2</m> consisting of
+		      eigenvectors.
+		    </p>
+		  </li>
+		  <li>
+		    <p>
+		      This matrix is diagonalizable with
+		      <md>
+			D = \begin{bmatrix}
+			2 \amp 0 \\
+			0 \amp 1 \\
+			\end{bmatrix},
+			\hspace{24pt}
+			P = \begin{bmatrix}
+			0 \amp 1 \\
+			1 \amp 1 \\
+			\end{bmatrix}\text{.}
+		      </md>
+		    </p>
+		  </li>
+		  <li>
+		    <p>
+		      This matrix is also diagonalizable with
+		      <md>
+			D = \begin{bmatrix}
+			10 \amp 0 \\
+			0 \amp 5 \\
+			\end{bmatrix},
+			\hspace{24pt}
+			P = \begin{bmatrix}
+			2 \amp 1 \\
+			1 \amp -2 \\
+			\end{bmatrix}\text{.}
+		      </md>
+		    </p>
+		  </li>
+		</ol>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		Only the last matrix <m>A=\begin{bmatrix}
+		9 \amp 2 \\
+		2 \amp 6
+		\end{bmatrix}</m>.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		We form an orthonormal basis by scaling the
+		eigenvectors to have length 1.  This gives
+		<m>Q = \begin{bmatrix}
+		2/\sqrt{5} \amp 1/\sqrt{5} \\
+		1/\sqrt{5} \amp -2/\sqrt{5} \\
+		\end{bmatrix}</m>, which is orthogonal since the
+		columns form an orthonormal basis of <m>\real^2</m>.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		Orthogonal matrices are invertible and have <m>Q^{-1}
+		= Q^T</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		If <m>A=QDQ^T</m>, we have <m>A^T=(QDQ^T)^T =
+		(Q^T)^TD^TQ^T = QDQ^T = A</m>.  This means that the
+		matrix is symmetric.
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </solution>
+	    
+      <answer>
+	<p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		<ol marker="1.">
+		  <li>
+		    <p>
+		      There is no such basis.
+		    </p>
+		  </li>
+		  <li>
+		    <p>
+		      There is no such basis.
+		    </p>
+		  </li>
+		  <li>
+		    <p>
+		      This matrix is diagonalizable with
+		      <md>
+			D = \begin{bmatrix}
+			2 \amp 0 \\
+			0 \amp 1 \\
+			\end{bmatrix},
+			\hspace{24pt}
+			P = \begin{bmatrix}
+			0 \amp 1 \\
+			1 \amp 1 \\
+			\end{bmatrix}\text{.}
+		      </md>
+		    </p>
+		  </li>
+		  <li>
+		    <p>
+		      This matrix is also diagonalizable with
+		      <md>
+			D = \begin{bmatrix}
+			10 \amp 0 \\
+			0 \amp 5 \\
+			\end{bmatrix},
+			\hspace{24pt}
+			P = \begin{bmatrix}
+			2 \amp 1 \\
+			1 \amp -2 \\
+			\end{bmatrix}\text{.}
+		      </md>
+		    </p>
+		  </li>
+		</ol>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		Only the last matrix.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>Q = \begin{bmatrix}
+		2/\sqrt{5} \amp 1/\sqrt{5} \\
+		1/\sqrt{5} \amp -2/\sqrt{5} \\
+		\end{bmatrix}</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>Q^{-1} =  Q^T</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>A=A^T</m>
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </answer>
+	    
+    </activity>
+   
+</worksheet>

@@ -1,0 +1,244 @@
+<worksheet label="ws-act-7-1-3">
+   <title>Activity 7.1.3</title>
+    <activity>
+      <statement>
+	<p>
+	  Each of the following matrices is symmetric so the Spectral
+	  Theorem tells us that each is orthogonally diagonalizable.
+	  The point of this activity is to find an orthogonal
+	  diagonalization for each matrix.
+	</p>
+
+	<p>
+	  To begin, find a basis for each eigenspace.  Use this basis to
+	  find an orthogonal basis for each eigenspace and put these
+	  bases together to find an orthogonal basis for <m>\real^m</m>
+	  consisting of eigenvectors.  Use this basis to write an
+	  orthogonal diagonalization of the matrix.
+        </p>
+	<sage>
+	  <input>
+            
+	  </input>
+	</sage>
+        <p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		<m>\begin{bmatrix}
+		0 \amp 2 \\
+		2 \amp 3
+		\end{bmatrix}
+		</m>.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>\begin{bmatrix}
+		4 \amp -2 \amp 14 \\
+		-2 \amp 19 \amp -16 \\
+		14 \amp -16 \amp 13
+		\end{bmatrix}
+		</m>.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>\begin{bmatrix}
+		5 \amp 4 \amp 2 \\
+		4 \amp 5 \amp 2 \\
+		2 \amp 2 \amp 2
+		\end{bmatrix}
+		</m>.
+	      </p>
+	    </li>
+	    <li>
+	      <p> Consider the matrix <m>A = B^TB</m> where
+	      <m> B = \begin{bmatrix}
+	      0 \amp 1 \amp 2 \\
+	      2 \amp 0 \amp 1 
+	      \end{bmatrix}
+	      </m>.
+	      Explain how we know that <m>A</m> is symmetric and then
+	      find an orthogonal diagonalization of <m>A</m>.
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </statement>
+      
+      <solution>
+	<p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		We have eigenvectors <m>\vvec_1=\twovec12</m> and
+		<m>\vvec_2 = \twovec{2}{-1}</m> with associated
+		eigenvalues <m>\lambda_1 = 4</m> and
+		<m>\lambda_2=-1</m>.  We form an orthonormal basis of
+		eigenvectors,
+		<m>\uvec_1=\twovec{1/\sqrt{5}}{2/\sqrt{5}}</m> and 
+		<m>\uvec_2=\twovec{2/\sqrt{5}}{-1/\sqrt{5}}</m>. This
+		gives
+		<md>
+		  D = \begin{bmatrix}
+		  4 \amp 0 \\
+		  0 \amp -1 \\
+		  \end{bmatrix},
+		  \hspace{24pt}
+		  Q = \begin{bmatrix}
+		  1/\sqrt{5} \amp 2/\sqrt{5} \\
+		  2/\sqrt{5} \amp -1/\sqrt{5} \\
+		  \end{bmatrix}\text{.}
+		</md>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		We find
+		<md>
+		  D = \begin{bmatrix}
+		  36 \amp 0 \amp 0 \\
+		  0 \amp 9 \amp 0 \\
+		  0 \amp 0 \amp -9 \\
+		  \end{bmatrix},
+		  \hspace{24pt}
+		  Q = \begin{bmatrix}
+		  1/3 \amp 2/3 \amp 2/3 \\
+		  -2/3 \amp 2/3 \amp -1/3 \\
+		  2/3 \amp 1/3 \amp -2/3 \\
+		  \end{bmatrix}\text{.}
+		</md>
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		We have eigenvalues <m>\lambda_1=10</m> with
+		associated eigenvector <m>\vvec_1=\threevec211</m> and
+		<m>\lambda_2 = 1</m> with associated eigenvectors
+		<m>\vvec_2=\threevec10{-2}</m> and
+		<m>\vvec_3=\threevec01{-2}</m>.  Notice that
+		<m>\vvec_1</m> is orthogonal to both <m>\vvec_2</m>
+		and <m>\vvec_3</m>, but
+		<m>\vvec_2</m> and <m>\vvec_3</m> are not orthogonal
+		to one another.  We can, however,
+		apply Gram-Schmidt to create an orthogonal
+		basis of the eigenspace <m>E_1</m>.  We can then form
+		an orthonormal basis so that
+		<md>
+		  D = \begin{bmatrix}
+		  10 \amp 0 \amp 0 \\
+		  0 \amp 1 \amp 0 \\
+		  0 \amp 0 \amp 1 \\
+		  \end{bmatrix},
+		  \hspace{24pt}
+		  Q = \begin{bmatrix}
+		  2/3 \amp 1/\sqrt{5} \amp -4/\sqrt{45} \\
+		  2/3 \amp 0 \amp 5/\sqrt{45} \\
+		  1/3 \amp -2/\sqrt{5} \amp -2/\sqrt{45} \\
+		  \end{bmatrix}\text{.}
+		</md>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		We have <m>A^T = (B^TB)^T = B^T(B^T)^T=B^TB = A</m> so
+		<m>A</m> must be symmetric.  Then we find the
+		orthogonal diagonalization
+		<md>
+		  D = \begin{bmatrix}
+		  7 \amp 0 \amp 0 \\
+		  0 \amp 3 \amp 0 \\
+		  0 \amp 0 \amp 0 \\
+		  \end{bmatrix},
+		  \hspace{24pt}
+		  Q = \begin{bmatrix}
+		  2/\sqrt{14} \amp 2/\sqrt{6} \amp 1/\sqrt{21} \\
+		  1/\sqrt{14} \amp -1/\sqrt{6} \amp 4/\sqrt{21} \\
+		  3/\sqrt{14} \amp -1/\sqrt{6} \amp -2/\sqrt{21} \\
+		  \end{bmatrix}\text{.}
+		</md>
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </solution>
+	    
+      <answer>
+	<p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		<md>
+		  D = \begin{bmatrix}
+		  4 \amp 0 \\
+		  0 \amp -1 \\
+		  \end{bmatrix},
+		  \hspace{24pt}
+		  Q = \begin{bmatrix}
+		  1/\sqrt{5} \amp 2/\sqrt{5} \\
+		  2/\sqrt{5} \amp -1/\sqrt{5} \\
+		  \end{bmatrix}\text{.}
+		</md>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<md>
+		  D = \begin{bmatrix}
+		  36 \amp 0 \amp 0 \\
+		  0 \amp 9 \amp 0 \\
+		  0 \amp 0 \amp -9 \\
+		  \end{bmatrix},
+		  \hspace{24pt}
+		  Q = \begin{bmatrix}
+		  1/3 \amp 2/3 \amp 2/3 \\
+		  -2/3 \amp 2/3 \amp -1/3 \\
+		  2/3 \amp 1/3 \amp -2/3 \\
+		  \end{bmatrix}\text{.}
+		</md>
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		<md>
+		  D = \begin{bmatrix}
+		  10 \amp 0 \amp 0 \\
+		  0 \amp 1 \amp 0 \\
+		  0 \amp 0 \amp 1 \\
+		  \end{bmatrix},
+		  \hspace{24pt}
+		  Q = \begin{bmatrix}
+		  2/3 \amp 1/\sqrt{5} \amp -4/\sqrt{45} \\
+		  2/3 \amp 0 \amp 5/\sqrt{45} \\
+		  1/3 \amp -2/\sqrt{5} \amp -2/\sqrt{45} \\
+		  \end{bmatrix}\text{.}
+		</md>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<md>
+		  D = \begin{bmatrix}
+		  7 \amp 0 \amp 0 \\
+		  0 \amp 3 \amp 0 \\
+		  0 \amp 0 \amp 0 \\
+		  \end{bmatrix},
+		  \hspace{24pt}
+		  Q = \begin{bmatrix}
+		  2/\sqrt{14} \amp 2/\sqrt{6} \amp 1/\sqrt{21} \\
+		  1/\sqrt{14} \amp -1/\sqrt{6} \amp 4/\sqrt{21} \\
+		  3/\sqrt{14} \amp -1/\sqrt{6} \amp -2/\sqrt{21} \\
+		  \end{bmatrix}\text{.}
+		</md>
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </answer>
+	    
+    </activity>
+   
+</worksheet>
