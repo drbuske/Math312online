@@ -1,0 +1,180 @@
+<worksheet label="ws-act-7-1-6">
+   <title>Activity 7.1.6</title>
+    <activity>
+      <statement>
+	<p>
+	
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		Evaluating the following Sage cell loads a dataset
+		consisting of 100 demeaned data points and provides a plot
+		of them.  It also provides the demeaned data matrix
+		<m>A</m>.
+              </p>
+		<sage>
+		  <input>
+import pandas as pd
+df = pd.read_csv('https://raw.githubusercontent.com/davidaustinm/ula_modules/master/data/variance-data.csv', header=None)
+data = [vector(row) for row in df.values]
+A = matrix(data).T
+list_plot(data, size=20, color='blue', aspect_ratio=1)
+		  </input>
+		</sage>
+	      
+	      <p>
+		What is the shape of the covariance matrix
+		<m>C</m>?  Find <m>C</m> and verify your response.
+              </p>
+		<sage>
+		  <input>
+		  </input>
+		</sage>
+	    </li>
+	    
+	    <li>
+	      <p>
+		By visually inspecting the data, determine which is
+		larger, <m>V_x</m> or <m>V_y</m>.  Then compute both
+		of these quantities to verify your response.
+	      </p>
+	    </li>
+	    
+	    <li>
+	      <p>
+		What is the total variance <m>V</m>?
+	      </p>
+	    </li>
+	    
+	    <li>
+	      <p>
+		In approximately what direction is the variance
+		greatest?  Choose a reasonable vector <m>\uvec</m> that
+		points in approximately that direction 
+		and find <m>V_{\uvec}</m>.
+	      </p>
+	    </li>
+	    
+	    <li>
+	      <p>
+		In approximately what direction is the variance
+		smallest?  Choose a reasonable vector <m>\wvec</m> that
+		points in approximately that direction
+		and find <m>V_{\wvec}</m>.
+	      </p>
+	    </li>
+	    
+	    <li>
+	      <p>
+		How are the directions <m>\uvec</m> and <m>\wvec</m> in
+		the last two parts of this 
+		problem related to one another?  Why does this
+		relationship hold?
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </statement>
+      
+      <solution>
+	<p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		<m>C</m> will be the <m>2\times2</m> matrix
+		<m>C=\begin{bmatrix}
+		1.38 \amp 0.70 \\
+		0.70 \amp 0.37
+		\end{bmatrix}
+		</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>V_x = 1.38</m> and <m>V_y=0.37</m>, which agrees
+		with the fact that the data is more spread out in the
+		horizontal than vertical direction.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>V=V_x+V_y=1.75</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		It looks like the direction <m>\twovec21</m> defined
+		by the unit vector
+		<m>\uvec_1=\twovec{2/\sqrt{5}}{1/\sqrt{5}}</m>.  We
+		find that <m>V_{\uvec_1} = 1.74</m>, which is almost
+		all of the total variance.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		It looks like the direction <m>\twovec{-1}{2}</m> defined
+		by the unit vector
+		<m>\uvec_2=\twovec{-1/\sqrt{5}}{2/\sqrt{5}}</m>.  We
+		find that <m>V_{\uvec_2} = 0.01</m>.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		They are orthogonal to one another.  Since the total
+		variance <m>V=V_{\uvec_1}+V_{\uvec_2}</m> when
+		<m>\uvec_1</m> and <m>\uvec_2</m> are orthogonal,
+		<m>V_{\uvec_1}</m> will be as large as possible when
+		<m>V_{\uvec_2}</m> is as small as possible.
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </solution>
+	    
+      <answer>
+	<p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		<m>C=\begin{bmatrix}
+		1.38 \amp 0.70 \\
+		0.70 \amp 0.37
+		\end{bmatrix}
+		</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>V_x = 1.38</m> and <m>V_y=0.37</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>V=1.75</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		If <m>\uvec_1=\twovec{2/\sqrt{5}}{1/\sqrt{5}}</m>,
+		then <m>V_{\uvec_1} = 1.74</m>.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		If <m>\uvec_2=\twovec{-1/\sqrt{5}}{2/\sqrt{5}}</m>,
+		then <m>V_{\uvec_2} = 0.01</m>.
+
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		They are orthogonal to one another.
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </answer>
+	    
+    </activity>
+   
+</worksheet>

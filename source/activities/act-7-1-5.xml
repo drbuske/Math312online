@@ -1,0 +1,216 @@
+<worksheet label="ws-act-7-1-5">
+   <title>Activity 7.1.5</title>
+    <activity>
+      <statement>
+	<p>
+	  Let's return to the dataset from the previous activity in which
+	  we have demeaned data points:
+	  <md>
+	    \dtil_1=\twovec{-1}{-1},\hspace{24pt}
+	    \dtil_2=\twovec{0}{-1},\hspace{24pt}
+	    \dtil_3=\twovec{1}{2}.
+	  </md>
+	  Our goal is to compute the variance <m>V_{\uvec}</m> in the
+	  direction defined by a unit vector
+	  <m>\uvec</m>.
+	</p>
+
+	<p>
+	  To begin, form the demeaned data matrix
+	  <md>
+	    A = \begin{bmatrix}
+	    \dtil_1 \amp \dtil_2 \amp \dtil_3
+	    \end{bmatrix}
+	  </md>
+	  and suppose that <m>\uvec</m> is a unit vector.  
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		Write the vector <m>A^T\uvec</m> in terms of
+		the dot products <m>\dtil_j\cdot\uvec</m>.
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		Explain why <m>V_{\uvec} = \frac13|A^T\uvec|^2</m>.
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		Explain why
+		<md>
+		  V_{\uvec} =
+		  \frac13|A^T\uvec|^2 = 
+		  \frac13 (A^T\uvec)\cdot(A^T\uvec) =
+		  \uvec^T\left(\frac13 AA^T\right)\uvec = 
+		  \uvec\cdot\left(\frac13 AA^T\right)\uvec
+		</md>
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		In general, the matrix <m>C=\frac1N~AA^T</m> is called
+		the <em>covariance</em> matrix of the dataset, and it
+		is useful because the variance <m>V_{\uvec} =
+		\uvec\cdot(C\uvec)</m>, as we have just seen.  Find
+		the matrix <m>C</m> for our dataset with three points.
+              </p>
+		<sage>
+		  <input>
+		  </input>
+		</sage>
+	    </li>
+
+	    <li>
+	      <p>
+		Use the covariance matrix to find the variance
+		<m>V_{\uvec_1}</m> when
+		<m>\uvec_1=\twovec{1/\sqrt{5}}{2/\sqrt{5}}</m>.
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		Use the covariance matrix to find the variance
+		<m>V_{\uvec_2}</m> when
+		<m>\uvec_2=\twovec{-2/\sqrt{5}}{1/\sqrt{5}}</m>.
+		Since <m>\uvec_1</m> and <m>\uvec_2</m> are
+		orthogonal, verify that the sum of <m>V_{\uvec_1}</m> and
+		<m>V_{\uvec_2}</m> 
+		gives the total variance.
+	      </p>
+	    </li>
+
+	    <li>
+	      <p>
+		Explain why the covariance matrix <m>C</m> is a
+		symmetric matrix.
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </statement>
+      
+      <solution>
+	<p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		<m>A^T\uvec=\threevec{\dtil_1\cdot\uvec}
+		{\dtil_2\cdot\uvec}
+		{\dtil_3\cdot\uvec}
+		</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		Projecting <m>\dtil_j</m> onto <m>\uvec</m> gives
+		<m>(\dtil_j\cdot\uvec)\uvec</m>, whose length squared is
+		<m>(\dtil_j\cdot\uvec)^2</m>.  Then
+		<md>
+		  V_{\uvec} = \frac13\left((\dtil_1\cdot\uvec)^2 +
+		  (\dtil_2\cdot\uvec)^2 + (\dtil_3\cdot\uvec)^2\right)
+		  = \frac13|A^T\uvec|^2\text{.}
+		</md>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<md>
+		  \frac13(A^T\uvec)\cdot(A^T\uvec) =
+		  \frac13\uvec\cdot(A^T)^TA^T\uvec =
+		  \uvec\cdot\left(\frac13AA^T\right)\uvec
+		</md>
+	      </p>
+	    </li>
+	    <li>
+	      <m>C=\begin{bmatrix}
+	      2/3 \amp 1 \\
+	      1 \amp 2
+	      \end{bmatrix}
+	      </m>
+	    </li>
+	    <li>
+	      <p>
+		<m>V_{\uvec_1} = 38/15</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>V_{\uvec_2} = 2/15</m>.  Then
+		<m>V_{\uvec_1}+V_{\uvec_2} = 8/3</m>, which is the
+		total variance.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>C^T = \left(\frac13 AA^T\right)^T = \frac13(A^T)^TA^T
+		= \frac13 AA^T = C</m>
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </solution>
+	    
+      <answer>
+	<p>
+	  <ol marker="a.">
+	    <li>
+	      <p>
+		<m>A^T\uvec=\threevec{\dtil_1\cdot\uvec}
+		{\dtil_2\cdot\uvec}
+		{\dtil_3\cdot\uvec}
+		</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<md>
+		  V_{\uvec} = \frac13\left((\dtil_1\cdot\uvec)^2 +
+		  (\dtil_2\cdot\uvec)^2 + (\dtil_3\cdot\uvec)^2\right)
+		  = \frac13|A^T\uvec|^2\text{.}
+		</md>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<md>
+		  \frac13(A^T\uvec)\cdot(A^T\uvec) =
+		  \frac13\uvec\cdot(A^T)^TA^T\uvec =
+		  \uvec\cdot\left(\frac13AA^T\right)\uvec
+		</md>
+	      </p>
+	    </li>
+	    <li>
+	      <m>C=\begin{bmatrix}
+	      2/3 \amp 1 \\
+	      1 \amp 2
+	      \end{bmatrix}
+	      </m>
+	    </li>
+	    <li>
+	      <p>
+		<m>V_{\uvec_1} = 38/15</m>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>V_{\uvec_2} = 2/15</m>.
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<m>C^T = \left(\frac13 AA^T\right)^T = \frac13(A^T)^TA^T
+		= \frac13 AA^T = C</m>
+	      </p>
+	    </li>
+	  </ol>
+	</p>
+      </answer>
+	    
+    </activity>
+   
+</worksheet>
